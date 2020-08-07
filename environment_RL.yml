@@ -1,0 +1,13 @@
+name: carla_ES
+dependencies:
+  - python=3.5
+  - networkx
+  - pandas
+  - tqdm
+  - imageio
+  - scikit-image
+  - pip:
+    - loguru
+    - opencv-python
+    - tensorboardx
+    - terminaltables

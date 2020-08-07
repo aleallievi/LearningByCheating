@@ -1,0 +1,8 @@
+
+
+// Initial parameter value
+param1	0.0
+
+
+// Initial standard deviation
+param1	1.0

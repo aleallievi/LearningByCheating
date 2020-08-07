@@ -1,0 +1,1217 @@
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553032271158 (Tue Mar 19 16:51:11 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553032438070 (Tue Mar 19 16:53:58 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553032917343 (Tue Mar 19 17:01:57 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553033537394 (Tue Mar 19 17:12:17 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553033828858 (Tue Mar 19 17:17:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553033868805 (Tue Mar 19 17:17:48 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553034155328 (Tue Mar 19 17:22:35 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553034188819 (Tue Mar 19 17:23:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553036408689 (Tue Mar 19 18:00:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553036519528 (Tue Mar 19 18:01:59 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553036617415 (Tue Mar 19 18:03:37 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553036710368 (Tue Mar 19 18:05:10 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553036746103 (Tue Mar 19 18:05:46 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037050506 (Tue Mar 19 18:10:50 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037112758 (Tue Mar 19 18:11:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037201096 (Tue Mar 19 18:13:21 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037394911 (Tue Mar 19 18:16:34 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037508742 (Tue Mar 19 18:18:28 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553037839058 (Tue Mar 19 18:23:59 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038440363 (Tue Mar 19 18:34:00 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038511265 (Tue Mar 19 18:35:11 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038560499 (Tue Mar 19 18:36:00 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038664958 (Tue Mar 19 18:37:44 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038711029 (Tue Mar 19 18:38:31 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038775344 (Tue Mar 19 18:39:35 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038827534 (Tue Mar 19 18:40:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553038878891 (Tue Mar 19 18:41:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039087084 (Tue Mar 19 18:44:47 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039165607 (Tue Mar 19 18:46:05 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039212734 (Tue Mar 19 18:46:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039309207 (Tue Mar 19 18:48:29 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039382764 (Tue Mar 19 18:49:42 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039456442 (Tue Mar 19 18:50:56 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039493570 (Tue Mar 19 18:51:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039541075 (Tue Mar 19 18:52:21 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553039651700 (Tue Mar 19 18:54:11 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040435203 (Tue Mar 19 19:07:15 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040458521 (Tue Mar 19 19:07:38 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040607941 (Tue Mar 19 19:10:07 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040731601 (Tue Mar 19 19:12:11 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040807328 (Tue Mar 19 19:13:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553040978107 (Tue Mar 19 19:16:18 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553049073309 (Tue Mar 19 21:31:13 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553049144096 (Tue Mar 19 21:32:24 CDT 2019)
+(2,5)-CMA-ES(mu_eff=1.6), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553049546649 (Tue Mar 19 21:39:06 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553050429235 (Tue Mar 19 21:53:49 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553101912275 (Wed Mar 20 12:11:52 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553102212720 (Wed Mar 20 12:16:52 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104331791 (Wed Mar 20 12:52:11 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104402026 (Wed Mar 20 12:53:22 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104569836 (Wed Mar 20 12:56:09 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104640651 (Wed Mar 20 12:57:20 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104759821 (Wed Mar 20 12:59:19 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553104926815 (Wed Mar 20 13:02:06 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553105665776 (Wed Mar 20 13:14:25 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553105839468 (Wed Mar 20 13:17:19 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553106645830 (Wed Mar 20 13:30:45 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553107965222 (Wed Mar 20 13:52:45 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553107976335 (Wed Mar 20 13:52:56 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553108002703 (Wed Mar 20 13:53:22 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553108042435 (Wed Mar 20 13:54:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553108111211 (Wed Mar 20 13:55:11 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553108125720 (Wed Mar 20 13:55:25 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553147270200 (Thu Mar 21 00:47:50 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553147330058 (Thu Mar 21 00:48:50 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553147363868 (Thu Mar 21 00:49:23 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553148290750 (Thu Mar 21 01:04:50 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553148322548 (Thu Mar 21 01:05:22 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553148727618 (Thu Mar 21 01:12:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553176293267 (Thu Mar 21 08:51:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178616138 (Thu Mar 21 09:30:16 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178649183 (Thu Mar 21 09:30:49 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178699600 (Thu Mar 21 09:31:39 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178877361 (Thu Mar 21 09:34:37 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178914222 (Thu Mar 21 09:35:14 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=40, 0 diagonal iter., randomSeed=1553178966460 (Thu Mar 21 09:36:06 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553187435621 (Thu Mar 21 11:57:15 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553187502082 (Thu Mar 21 11:58:22 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553187566412 (Thu Mar 21 11:59:26 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553187579218 (Thu Mar 21 11:59:39 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553188293477 (Thu Mar 21 12:11:33 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553188356339 (Thu Mar 21 12:12:36 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553188886630 (Thu Mar 21 12:21:26 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553188950621 (Thu Mar 21 12:22:30 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189065396 (Thu Mar 21 12:24:25 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189087676 (Thu Mar 21 12:24:47 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189134348 (Thu Mar 21 12:25:34 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189361545 (Thu Mar 21 12:29:21 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189380880 (Thu Mar 21 12:29:40 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189458159 (Thu Mar 21 12:30:58 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553189501483 (Thu Mar 21 12:31:41 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199438829 (Thu Mar 21 15:17:18 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199584658 (Thu Mar 21 15:19:44 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199706433 (Thu Mar 21 15:21:46 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199782787 (Thu Mar 21 15:23:02 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199813490 (Thu Mar 21 15:23:33 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553199871892 (Thu Mar 21 15:24:31 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553200056131 (Thu Mar 21 15:27:36 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553200536404 (Thu Mar 21 15:35:36 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553200621294 (Thu Mar 21 15:37:01 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553200821243 (Thu Mar 21 15:40:21 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201139882 (Thu Mar 21 15:45:39 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201209001 (Thu Mar 21 15:46:49 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201277686 (Thu Mar 21 15:47:57 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201329155 (Thu Mar 21 15:48:49 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201874476 (Thu Mar 21 15:57:54 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553201926888 (Thu Mar 21 15:58:46 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553202490534 (Thu Mar 21 16:08:10 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553203053144 (Thu Mar 21 16:17:33 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553203363549 (Thu Mar 21 16:22:43 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553203467457 (Thu Mar 21 16:24:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553208353629 (Thu Mar 21 17:45:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553236741947 (Fri Mar 22 01:39:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553236771528 (Fri Mar 22 01:39:31 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553237193831 (Fri Mar 22 01:46:33 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553237569690 (Fri Mar 22 01:52:49 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553238003052 (Fri Mar 22 02:00:03 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553267833684 (Fri Mar 22 10:17:13 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553267893141 (Fri Mar 22 10:18:13 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553267903739 (Fri Mar 22 10:18:23 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553267961193 (Fri Mar 22 10:19:21 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553267973496 (Fri Mar 22 10:19:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553268029911 (Fri Mar 22 10:20:29 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553270333709 (Fri Mar 22 10:58:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553283699966 (Fri Mar 22 14:41:39 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553283759328 (Fri Mar 22 14:42:39 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553283877100 (Fri Mar 22 14:44:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553283962869 (Fri Mar 22 14:46:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553284057128 (Fri Mar 22 14:47:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553284086913 (Fri Mar 22 14:48:06 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301258210 (Fri Mar 22 19:34:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301320933 (Fri Mar 22 19:35:20 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301469638 (Fri Mar 22 19:37:49 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301540642 (Fri Mar 22 19:39:00 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301559988 (Fri Mar 22 19:39:19 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553301899657 (Fri Mar 22 19:44:59 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553302913875 (Fri Mar 22 20:01:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553307109071 (Fri Mar 22 21:11:49 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553309840619 (Fri Mar 22 21:57:20 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553311089931 (Fri Mar 22 22:18:09 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553311151542 (Fri Mar 22 22:19:11 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553311193720 (Fri Mar 22 22:19:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553311398454 (Fri Mar 22 22:23:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553311909297 (Fri Mar 22 22:31:49 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553312624743 (Fri Mar 22 22:43:44 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553312717163 (Fri Mar 22 22:45:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553312727889 (Fri Mar 22 22:45:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553312767781 (Fri Mar 22 22:46:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553317147089 (Fri Mar 22 23:59:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553317267242 (Sat Mar 23 00:01:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553317289528 (Sat Mar 23 00:01:29 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553317530140 (Sat Mar 23 00:05:30 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553317597744 (Sat Mar 23 00:06:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553321276350 (Sat Mar 23 01:07:56 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553321323922 (Sat Mar 23 01:08:43 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553321367181 (Sat Mar 23 01:09:27 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553321928891 (Sat Mar 23 01:18:48 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322145422 (Sat Mar 23 01:22:25 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322438539 (Sat Mar 23 01:27:18 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322462303 (Sat Mar 23 01:27:42 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322464172 (Sat Mar 23 01:27:44 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322466010 (Sat Mar 23 01:27:46 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322565573 (Sat Mar 23 01:29:25 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322624038 (Sat Mar 23 01:30:24 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322652792 (Sat Mar 23 01:30:52 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322693933 (Sat Mar 23 01:31:33 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322845794 (Sat Mar 23 01:34:05 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322868078 (Sat Mar 23 01:34:28 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553322960275 (Sat Mar 23 01:36:00 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553337859231 (Sat Mar 23 05:44:19 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553351952611 (Sat Mar 23 09:39:12 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553353341637 (Sat Mar 23 10:02:21 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553353708909 (Sat Mar 23 10:08:28 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553353801044 (Sat Mar 23 10:10:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553353879329 (Sat Mar 23 10:11:19 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553353906978 (Sat Mar 23 10:11:46 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354056112 (Sat Mar 23 10:14:16 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354105454 (Sat Mar 23 10:15:05 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354161337 (Sat Mar 23 10:16:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354177785 (Sat Mar 23 10:16:17 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354701942 (Sat Mar 23 10:25:01 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553354719581 (Sat Mar 23 10:25:19 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553380800429 (Sat Mar 23 17:40:00 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553380838428 (Sat Mar 23 17:40:38 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553380873794 (Sat Mar 23 17:41:13 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553381018622 (Sat Mar 23 17:43:38 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553382938584 (Sat Mar 23 18:15:38 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553382961012 (Sat Mar 23 18:16:01 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553386466490 (Sat Mar 23 19:14:26 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553390313946 (Sat Mar 23 20:18:33 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553393791057 (Sat Mar 23 21:16:31 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553393796488 (Sat Mar 23 21:16:36 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553397435769 (Sat Mar 23 22:17:15 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553401507565 (Sat Mar 23 23:25:07 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553405187002 (Sun Mar 24 00:26:27 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553408478804 (Sun Mar 24 01:21:18 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553410856868 (Sun Mar 24 02:00:56 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553410865445 (Sun Mar 24 02:01:05 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553410888523 (Sun Mar 24 02:01:28 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553414049157 (Sun Mar 24 02:54:09 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553417420200 (Sun Mar 24 03:50:20 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553420588194 (Sun Mar 24 04:43:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553423890096 (Sun Mar 24 05:38:10 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553447470678 (Sun Mar 24 12:11:10 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553450969877 (Sun Mar 24 13:09:29 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553454316286 (Sun Mar 24 14:05:16 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553457896493 (Sun Mar 24 15:04:56 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553461272928 (Sun Mar 24 16:01:12 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553462679752 (Sun Mar 24 16:24:39 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553465018848 (Sun Mar 24 17:03:38 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553467837769 (Sun Mar 24 17:50:37 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553470033321 (Sun Mar 24 18:27:13 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553472390645 (Sun Mar 24 19:06:30 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553474814940 (Sun Mar 24 19:46:54 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553490403405 (Mon Mar 25 00:06:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553491386658 (Mon Mar 25 00:23:06 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553496729520 (Mon Mar 25 01:52:09 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553501742441 (Mon Mar 25 03:15:42 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553506129055 (Mon Mar 25 04:28:49 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553527982833 (Mon Mar 25 10:33:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553528117912 (Mon Mar 25 10:35:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553532401782 (Mon Mar 25 11:46:41 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553534434095 (Mon Mar 25 12:20:34 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553539001735 (Mon Mar 25 13:36:41 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553543293385 (Mon Mar 25 14:48:13 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553549272657 (Mon Mar 25 16:27:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553564266774 (Mon Mar 25 20:37:46 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553564288786 (Mon Mar 25 20:38:08 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553564348818 (Mon Mar 25 20:39:08 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553564540345 (Mon Mar 25 20:42:20 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553568268791 (Mon Mar 25 21:44:28 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553568324946 (Mon Mar 25 21:45:24 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553568603539 (Mon Mar 25 21:50:03 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577320209 (Tue Mar 26 00:15:20 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577432602 (Tue Mar 26 00:17:12 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577558458 (Tue Mar 26 00:19:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577566487 (Tue Mar 26 00:19:26 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577617014 (Tue Mar 26 00:20:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577657195 (Tue Mar 26 00:20:57 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1553577724849 (Tue Mar 26 00:22:04 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553577952344 (Tue Mar 26 00:25:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553578057076 (Tue Mar 26 00:27:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553578093694 (Tue Mar 26 00:28:13 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1553578105759 (Tue Mar 26 00:28:25 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553578300483 (Tue Mar 26 00:31:40 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553578342383 (Tue Mar 26 00:32:22 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553578380085 (Tue Mar 26 00:33:00 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553579336953 (Tue Mar 26 00:48:56 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1553579379706 (Tue Mar 26 00:49:39 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553581471127 (Tue Mar 26 01:24:31 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553587328071 (Tue Mar 26 03:02:08 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553611483946 (Tue Mar 26 09:44:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553611517697 (Tue Mar 26 09:45:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553611741230 (Tue Mar 26 09:49:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553611758449 (Tue Mar 26 09:49:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553614005325 (Tue Mar 26 10:26:45 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553614471584 (Tue Mar 26 10:34:31 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553617785233 (Tue Mar 26 11:29:45 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553626091160 (Tue Mar 26 13:48:11 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553631467006 (Tue Mar 26 15:17:47 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553634466452 (Tue Mar 26 16:07:46 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553635103030 (Tue Mar 26 16:18:23 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553635230314 (Tue Mar 26 16:20:30 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553708162177 (Wed Mar 27 12:36:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553712007726 (Wed Mar 27 13:40:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553713844166 (Wed Mar 27 14:10:44 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553718398413 (Wed Mar 27 15:26:38 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553722975252 (Wed Mar 27 16:42:55 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553736457480 (Wed Mar 27 20:27:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553739457612 (Wed Mar 27 21:17:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553741152742 (Wed Mar 27 21:45:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553746021025 (Wed Mar 27 23:07:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553753637405 (Thu Mar 28 01:13:57 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808141217 (Thu Mar 28 16:22:21 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808169995 (Thu Mar 28 16:22:49 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808349615 (Thu Mar 28 16:25:49 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808437903 (Thu Mar 28 16:27:17 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808480702 (Thu Mar 28 16:28:00 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553808498510 (Thu Mar 28 16:28:18 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553812369628 (Thu Mar 28 17:32:49 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553812393111 (Thu Mar 28 17:33:13 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553812431512 (Thu Mar 28 17:33:51 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553813228345 (Thu Mar 28 17:47:08 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553813764657 (Thu Mar 28 17:56:04 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553814037783 (Thu Mar 28 18:00:37 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553814752142 (Thu Mar 28 18:12:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553814773771 (Thu Mar 28 18:12:53 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553816203006 (Thu Mar 28 18:36:43 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553816862230 (Thu Mar 28 18:47:42 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553823074060 (Thu Mar 28 20:31:14 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553823335882 (Thu Mar 28 20:35:35 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553823584988 (Thu Mar 28 20:39:44 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553824255237 (Thu Mar 28 20:50:55 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553824400995 (Thu Mar 28 20:53:20 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553824495608 (Thu Mar 28 20:54:55 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553824751955 (Thu Mar 28 20:59:11 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553825833286 (Thu Mar 28 21:17:13 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553830692578 (Thu Mar 28 22:38:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553830749459 (Thu Mar 28 22:39:09 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553830825644 (Thu Mar 28 22:40:25 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553830836757 (Thu Mar 28 22:40:36 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553832943137 (Thu Mar 28 23:15:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553833513835 (Thu Mar 28 23:25:13 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553834187481 (Thu Mar 28 23:36:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553835769452 (Fri Mar 29 00:02:49 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553837059609 (Fri Mar 29 00:24:19 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553838393176 (Fri Mar 29 00:46:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553841906364 (Fri Mar 29 01:45:06 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553841986252 (Fri Mar 29 01:46:26 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553842627711 (Fri Mar 29 01:57:07 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553843758923 (Fri Mar 29 02:15:58 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553844542153 (Fri Mar 29 02:29:02 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553867519295 (Fri Mar 29 08:51:59 CDT 2019)
+(2,5)-CMA-ES(mu_eff=1.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553869123293 (Fri Mar 29 09:18:43 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553869447118 (Fri Mar 29 09:24:07 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553870734333 (Fri Mar 29 09:45:34 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553870885974 (Fri Mar 29 09:48:05 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553870908255 (Fri Mar 29 09:48:28 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553873066320 (Fri Mar 29 10:24:26 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553873937707 (Fri Mar 29 10:38:57 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553875982067 (Fri Mar 29 11:13:02 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553876337308 (Fri Mar 29 11:18:57 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553876820914 (Fri Mar 29 11:27:00 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553877059602 (Fri Mar 29 11:30:59 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553877118283 (Fri Mar 29 11:31:58 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553879239415 (Fri Mar 29 12:07:19 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553879411955 (Fri Mar 29 12:10:11 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553880412222 (Fri Mar 29 12:26:52 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553883413175 (Fri Mar 29 13:16:53 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553883543869 (Fri Mar 29 13:19:03 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553884009639 (Fri Mar 29 13:26:49 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553884133310 (Fri Mar 29 13:28:53 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553884230901 (Fri Mar 29 13:30:30 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553884283343 (Fri Mar 29 13:31:23 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553884620206 (Fri Mar 29 13:37:00 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553885275266 (Fri Mar 29 13:47:55 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553886661117 (Fri Mar 29 14:11:01 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553887006322 (Fri Mar 29 14:16:46 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553887480859 (Fri Mar 29 14:24:40 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553887765806 (Fri Mar 29 14:29:25 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553888735840 (Fri Mar 29 14:45:35 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553888757575 (Fri Mar 29 14:45:57 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553899718547 (Fri Mar 29 17:48:38 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553900005381 (Fri Mar 29 17:53:25 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553900388493 (Fri Mar 29 17:59:48 CDT 2019)
+ CMA-ES error: initial standard deviations not specified or non-positive, use setInitialStandarddeviations()
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553905603161 (Fri Mar 29 19:26:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553905674180 (Fri Mar 29 19:27:54 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553905763149 (Fri Mar 29 19:29:23 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553905809437 (Fri Mar 29 19:30:09 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553905903858 (Fri Mar 29 19:31:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906013315 (Fri Mar 29 19:33:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906117178 (Fri Mar 29 19:35:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906298735 (Fri Mar 29 19:38:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906321512 (Fri Mar 29 19:38:41 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906412438 (Fri Mar 29 19:40:12 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906512897 (Fri Mar 29 19:41:52 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553906573116 (Fri Mar 29 19:42:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553921282720 (Fri Mar 29 23:48:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553923694846 (Sat Mar 30 00:28:14 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553923732453 (Sat Mar 30 00:28:52 CDT 2019)
+(62,125)-CMA-ES(mu_eff=33.4), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553924193566 (Sat Mar 30 00:36:33 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553924763947 (Sat Mar 30 00:46:03 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(62,125)-CMA-ES(mu_eff=33.4), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553924974110 (Sat Mar 30 00:49:34 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553925495223 (Sat Mar 30 00:58:15 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553925503413 (Sat Mar 30 00:58:23 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553925542867 (Sat Mar 30 00:59:02 CDT 2019)
+(100,200)-CMA-ES(mu_eff=52.9), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553956321855 (Sat Mar 30 09:32:01 CDT 2019)
+(100,200)-CMA-ES(mu_eff=52.9), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553957166902 (Sat Mar 30 09:46:06 CDT 2019)
+(100,200)-CMA-ES(mu_eff=52.9), Ver="0.99.22", dimension=44, 0 diagonal iter., randomSeed=1553957214391 (Sat Mar 30 09:46:54 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553981432246 (Sat Mar 30 16:30:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553981585114 (Sat Mar 30 16:33:05 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553981596647 (Sat Mar 30 16:33:16 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553981738070 (Sat Mar 30 16:35:38 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553981830620 (Sat Mar 30 16:37:10 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982044093 (Sat Mar 30 16:40:44 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982061606 (Sat Mar 30 16:41:01 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982265802 (Sat Mar 30 16:44:25 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982273833 (Sat Mar 30 16:44:33 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982306613 (Sat Mar 30 16:45:06 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553982313128 (Sat Mar 30 16:45:13 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553984059456 (Sat Mar 30 17:14:19 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553984211763 (Sat Mar 30 17:16:51 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553986472752 (Sat Mar 30 17:54:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553986509433 (Sat Mar 30 17:55:09 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553987398733 (Sat Mar 30 18:09:58 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553987406523 (Sat Mar 30 18:10:06 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553990404015 (Sat Mar 30 19:00:04 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553990417550 (Sat Mar 30 19:00:17 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553991532508 (Sat Mar 30 19:18:52 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553992069238 (Sat Mar 30 19:27:49 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553993334944 (Sat Mar 30 19:48:54 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553993512726 (Sat Mar 30 19:51:52 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553993521088 (Sat Mar 30 19:52:01 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553996061914 (Sat Mar 30 20:34:21 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1553996071124 (Sat Mar 30 20:34:31 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554001535710 (Sat Mar 30 22:05:35 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554003552208 (Sat Mar 30 22:39:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554006424250 (Sat Mar 30 23:27:04 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554006587492 (Sat Mar 30 23:29:47 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554007869496 (Sat Mar 30 23:51:09 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554008321176 (Sat Mar 30 23:58:41 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554010572898 (Sun Mar 31 00:36:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554012236990 (Sun Mar 31 01:03:56 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554493871839 (Fri Apr 05 14:51:11 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554493954672 (Fri Apr 05 14:52:34 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554493982742 (Fri Apr 05 14:53:02 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554494359011 (Fri Apr 05 14:59:19 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554494662042 (Fri Apr 05 15:04:22 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554494723651 (Fri Apr 05 15:05:23 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554494956971 (Fri Apr 05 15:09:16 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554495074542 (Fri Apr 05 15:11:14 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554495278587 (Fri Apr 05 15:14:38 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554495330396 (Fri Apr 05 15:15:30 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554495548896 (Fri Apr 05 15:19:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554498659986 (Fri Apr 05 16:10:59 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554499287824 (Fri Apr 05 16:21:27 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502328986 (Fri Apr 05 17:12:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502364810 (Fri Apr 05 17:12:44 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502458429 (Fri Apr 05 17:14:18 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502503753 (Fri Apr 05 17:15:03 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502581454 (Fri Apr 05 17:16:21 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554502708641 (Fri Apr 05 17:18:28 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554509621637 (Fri Apr 05 19:13:41 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554509692540 (Fri Apr 05 19:14:52 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554511233180 (Fri Apr 05 19:40:33 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554511363171 (Fri Apr 05 19:42:43 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554511372162 (Fri Apr 05 19:42:52 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554526956250 (Sat Apr 06 00:02:36 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554528728157 (Sat Apr 06 00:32:08 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554529179972 (Sat Apr 06 00:39:39 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554557718444 (Sat Apr 06 08:35:18 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554566641892 (Sat Apr 06 11:04:01 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554570770276 (Sat Apr 06 12:12:50 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554570785892 (Sat Apr 06 12:13:05 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554573507918 (Sat Apr 06 12:58:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554617540548 (Sun Apr 07 01:12:20 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554617724966 (Sun Apr 07 01:15:24 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554617933756 (Sun Apr 07 01:18:53 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554617963515 (Sun Apr 07 01:19:23 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618001595 (Sun Apr 07 01:20:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618076123 (Sun Apr 07 01:21:16 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618157684 (Sun Apr 07 01:22:37 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618209364 (Sun Apr 07 01:23:29 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618242285 (Sun Apr 07 01:24:02 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618326325 (Sun Apr 07 01:25:26 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618763477 (Sun Apr 07 01:32:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618813101 (Sun Apr 07 01:33:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618915067 (Sun Apr 07 01:35:15 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554618947184 (Sun Apr 07 01:35:47 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619106881 (Sun Apr 07 01:38:26 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619148704 (Sun Apr 07 01:39:08 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619190935 (Sun Apr 07 01:39:50 CDT 2019)
+(2,5)-CMA-ES(mu_eff=1.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619288261 (Sun Apr 07 01:41:28 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619354750 (Sun Apr 07 01:42:34 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554619368016 (Sun Apr 07 01:42:48 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620083714 (Sun Apr 07 01:54:43 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620091676 (Sun Apr 07 01:54:51 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620131686 (Sun Apr 07 01:55:31 CDT 2019)
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620758444 (Sun Apr 07 02:05:58 CDT 2019)
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620834298 (Sun Apr 07 02:07:14 CDT 2019)
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554620909974 (Sun Apr 07 02:08:29 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554648648486 (Sun Apr 07 09:50:48 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554648661232 (Sun Apr 07 09:51:01 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554648674390 (Sun Apr 07 09:51:14 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554649303062 (Sun Apr 07 10:01:43 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554649706086 (Sun Apr 07 10:08:26 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554649716006 (Sun Apr 07 10:08:36 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554650324653 (Sun Apr 07 10:18:44 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554650334956 (Sun Apr 07 10:18:54 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1554651261422 (Sun Apr 07 10:34:21 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554651489988 (Sun Apr 07 10:38:09 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554653689665 (Sun Apr 07 11:14:49 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554653726922 (Sun Apr 07 11:15:26 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554653805702 (Sun Apr 07 11:16:45 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554653942791 (Sun Apr 07 11:19:02 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654034973 (Sun Apr 07 11:20:34 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654084105 (Sun Apr 07 11:21:24 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654114798 (Sun Apr 07 11:21:54 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654166886 (Sun Apr 07 11:22:46 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654447266 (Sun Apr 07 11:27:27 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654473541 (Sun Apr 07 11:27:53 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554654712421 (Sun Apr 07 11:31:52 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554655276468 (Sun Apr 07 11:41:16 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554656034957 (Sun Apr 07 11:53:54 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554656093689 (Sun Apr 07 11:54:53 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554656174506 (Sun Apr 07 11:56:14 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554656208246 (Sun Apr 07 11:56:48 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554657150775 (Sun Apr 07 12:12:30 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554657253660 (Sun Apr 07 12:14:13 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554657772649 (Sun Apr 07 12:22:52 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554657797070 (Sun Apr 07 12:23:17 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554657828223 (Sun Apr 07 12:23:48 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554657869082 (Sun Apr 07 12:24:29 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554667857986 (Sun Apr 07 15:10:57 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554667894646 (Sun Apr 07 15:11:34 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554667907984 (Sun Apr 07 15:11:47 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554668062168 (Sun Apr 07 15:14:22 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554668099484 (Sun Apr 07 15:14:59 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554668164541 (Sun Apr 07 15:16:04 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554668192956 (Sun Apr 07 15:16:32 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554668267362 (Sun Apr 07 15:17:47 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554669636928 (Sun Apr 07 15:40:36 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554670017566 (Sun Apr 07 15:46:57 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554670034950 (Sun Apr 07 15:47:14 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554670415352 (Sun Apr 07 15:53:35 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554670430319 (Sun Apr 07 15:53:50 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554673253778 (Sun Apr 07 16:40:53 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554673563115 (Sun Apr 07 16:46:03 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554673598156 (Sun Apr 07 16:46:38 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554678542233 (Sun Apr 07 18:09:02 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554685543085 (Sun Apr 07 20:05:43 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554691765222 (Sun Apr 07 21:49:25 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554691803434 (Sun Apr 07 21:50:03 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554691882010 (Sun Apr 07 21:51:22 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554691918982 (Sun Apr 07 21:51:58 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554692200292 (Sun Apr 07 21:56:40 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554692446253 (Sun Apr 07 22:00:46 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554692513619 (Sun Apr 07 22:01:53 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554694910620 (Sun Apr 07 22:41:50 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554697529464 (Sun Apr 07 23:25:29 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554702224082 (Mon Apr 08 00:43:44 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554704118877 (Mon Apr 08 01:15:18 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554704151198 (Mon Apr 08 01:15:51 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554735029227 (Mon Apr 08 09:50:29 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554735073555 (Mon Apr 08 09:51:13 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554735718596 (Mon Apr 08 10:01:58 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554735726752 (Mon Apr 08 10:02:06 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554735989539 (Mon Apr 08 10:06:29 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554736000862 (Mon Apr 08 10:06:40 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554736135471 (Mon Apr 08 10:08:55 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554736163020 (Mon Apr 08 10:09:23 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740545793 (Mon Apr 08 11:22:25 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740594833 (Mon Apr 08 11:23:14 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740602147 (Mon Apr 08 11:23:22 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740611752 (Mon Apr 08 11:23:31 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740762407 (Mon Apr 08 11:26:02 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740779162 (Mon Apr 08 11:26:19 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554740925371 (Mon Apr 08 11:28:45 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554741028388 (Mon Apr 08 11:30:28 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554742987015 (Mon Apr 08 12:03:07 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554743046408 (Mon Apr 08 12:04:06 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554743100061 (Mon Apr 08 12:05:00 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554743270365 (Mon Apr 08 12:07:50 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554745857841 (Mon Apr 08 12:50:57 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554745924774 (Mon Apr 08 12:52:04 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554745945280 (Mon Apr 08 12:52:25 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554746039466 (Mon Apr 08 12:53:59 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554746157788 (Mon Apr 08 12:55:57 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554750062233 (Mon Apr 08 14:01:02 CDT 2019)
+(1,2)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554765803572 (Mon Apr 08 18:23:23 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554765913469 (Mon Apr 08 18:25:13 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554766044640 (Mon Apr 08 18:27:24 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554767580092 (Mon Apr 08 18:53:00 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554767654916 (Mon Apr 08 18:54:14 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554771924835 (Mon Apr 08 20:05:24 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554772387810 (Mon Apr 08 20:13:07 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554780446744 (Mon Apr 08 22:27:26 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554780523080 (Mon Apr 08 22:28:43 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554780586246 (Mon Apr 08 22:29:46 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554781028875 (Mon Apr 08 22:37:08 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554781061736 (Mon Apr 08 22:37:41 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554786463010 (Tue Apr 09 00:07:43 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554786489689 (Tue Apr 09 00:08:09 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554790057905 (Tue Apr 09 01:07:37 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554790076348 (Tue Apr 09 01:07:56 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554825046066 (Tue Apr 09 10:50:46 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554828949371 (Tue Apr 09 11:55:49 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554838837363 (Tue Apr 09 14:40:37 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554839227553 (Tue Apr 09 14:47:07 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554839549972 (Tue Apr 09 14:52:29 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554839561087 (Tue Apr 09 14:52:41 CDT 2019)
+(5,10)-CMA-ES(mu_eff=3.4), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554839675373 (Tue Apr 09 14:54:35 CDT 2019)
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554840295355 (Tue Apr 09 15:04:55 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(1,3)-CMA-ES(mu_eff=1.0), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554840432068 (Tue Apr 09 15:07:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554841112554 (Tue Apr 09 15:18:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554844887462 (Tue Apr 09 16:21:27 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554845012401 (Tue Apr 09 16:23:32 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554845551769 (Tue Apr 09 16:32:31 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554846945250 (Tue Apr 09 16:55:45 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554847856731 (Tue Apr 09 17:10:56 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554848609780 (Tue Apr 09 17:23:29 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554848657856 (Tue Apr 09 17:24:17 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554848843537 (Tue Apr 09 17:27:23 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554849448596 (Tue Apr 09 17:37:28 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554849510739 (Tue Apr 09 17:38:30 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554849622370 (Tue Apr 09 17:40:22 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554849994421 (Tue Apr 09 17:46:34 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554850053839 (Tue Apr 09 17:47:33 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554853233482 (Tue Apr 09 18:40:33 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554855369197 (Tue Apr 09 19:16:09 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554856547556 (Tue Apr 09 19:35:47 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554856574967 (Tue Apr 09 19:36:14 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554856698296 (Tue Apr 09 19:38:18 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554857599684 (Tue Apr 09 19:53:19 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554857652939 (Tue Apr 09 19:54:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554860690623 (Tue Apr 09 20:44:50 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554863493038 (Tue Apr 09 21:31:33 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554867778291 (Tue Apr 09 22:42:58 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554867984672 (Tue Apr 09 22:46:24 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554868001567 (Tue Apr 09 22:46:41 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554870571734 (Tue Apr 09 23:29:31 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554870612908 (Tue Apr 09 23:30:12 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554871156181 (Tue Apr 09 23:39:16 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554871261560 (Tue Apr 09 23:41:01 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554873377738 (Wed Apr 10 00:16:17 CDT 2019)
+(2,5)-CMA-ES(mu_eff=1.6), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554874695427 (Wed Apr 10 00:38:15 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554874915326 (Wed Apr 10 00:41:55 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554876121390 (Wed Apr 10 01:02:01 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554902134903 (Wed Apr 10 08:15:34 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554902368694 (Wed Apr 10 08:19:28 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1554903511768 (Wed Apr 10 08:38:31 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554922337452 (Wed Apr 10 13:52:17 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554922344218 (Wed Apr 10 13:52:24 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554923937111 (Wed Apr 10 14:18:57 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1554923951066 (Wed Apr 10 14:19:11 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554933302212 (Wed Apr 10 16:55:02 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554933562434 (Wed Apr 10 16:59:22 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554933578914 (Wed Apr 10 16:59:38 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554933655144 (Wed Apr 10 17:00:55 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554933667821 (Wed Apr 10 17:01:07 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1554935005700 (Wed Apr 10 17:23:25 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554937532427 (Wed Apr 10 18:05:32 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554937940778 (Wed Apr 10 18:12:20 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554940194401 (Wed Apr 10 18:49:54 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554940219049 (Wed Apr 10 18:50:19 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554942874145 (Wed Apr 10 19:34:34 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554943546706 (Wed Apr 10 19:45:46 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554943566369 (Wed Apr 10 19:46:06 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554944761573 (Wed Apr 10 20:06:01 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1554945620612 (Wed Apr 10 20:20:20 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554946866903 (Wed Apr 10 20:41:06 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554948845804 (Wed Apr 10 21:14:05 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554949458080 (Wed Apr 10 21:24:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554949503821 (Wed Apr 10 21:25:03 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554949531240 (Wed Apr 10 21:25:31 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554949561492 (Wed Apr 10 21:26:01 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554949684396 (Wed Apr 10 21:28:04 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554962552308 (Thu Apr 11 01:02:32 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554962639860 (Thu Apr 11 01:03:59 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1554963550298 (Thu Apr 11 01:19:10 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555014838806 (Thu Apr 11 15:33:58 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555014874308 (Thu Apr 11 15:34:34 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555014919120 (Thu Apr 11 15:35:19 CDT 2019)
+(12,25)-CMA-ES(mu_eff=7.3), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015343498 (Thu Apr 11 15:42:23 CDT 2019)
+(12,25)-CMA-ES(mu_eff=7.3), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015349588 (Thu Apr 11 15:42:29 CDT 2019)
+(12,25)-CMA-ES(mu_eff=7.3), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015350512 (Thu Apr 11 15:42:30 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015368971 (Thu Apr 11 15:42:48 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015655985 (Thu Apr 11 15:47:35 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555015948733 (Thu Apr 11 15:52:28 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016213046 (Thu Apr 11 15:56:53 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016251475 (Thu Apr 11 15:57:31 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016299002 (Thu Apr 11 15:58:19 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016318806 (Thu Apr 11 15:58:38 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016452592 (Thu Apr 11 16:00:52 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016549810 (Thu Apr 11 16:02:29 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016586083 (Thu Apr 11 16:03:06 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555016640130 (Thu Apr 11 16:04:00 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555017839073 (Thu Apr 11 16:23:59 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555017891412 (Thu Apr 11 16:24:51 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555019631046 (Thu Apr 11 16:53:51 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555020205712 (Thu Apr 11 17:03:25 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555021580320 (Thu Apr 11 17:26:20 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555022996346 (Thu Apr 11 17:49:56 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555024749816 (Thu Apr 11 18:19:09 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555024752865 (Thu Apr 11 18:19:12 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555024763493 (Thu Apr 11 18:19:23 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555024789083 (Thu Apr 11 18:19:49 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555027104846 (Thu Apr 11 18:58:24 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555035335405 (Thu Apr 11 21:15:35 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555035723086 (Thu Apr 11 21:22:03 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555045101941 (Thu Apr 11 23:58:21 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555045414118 (Fri Apr 12 00:03:34 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555055768916 (Fri Apr 12 02:56:08 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555065743019 (Fri Apr 12 05:42:23 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555075731556 (Fri Apr 12 08:28:51 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555078751387 (Fri Apr 12 09:19:11 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555079035304 (Fri Apr 12 09:23:55 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555079058022 (Fri Apr 12 09:24:18 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555079386959 (Fri Apr 12 09:29:46 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555079469235 (Fri Apr 12 09:31:09 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555080331702 (Fri Apr 12 09:45:31 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555080342456 (Fri Apr 12 09:45:42 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555080418563 (Fri Apr 12 09:46:58 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085163728 (Fri Apr 12 11:06:03 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085202311 (Fri Apr 12 11:06:42 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085707673 (Fri Apr 12 11:15:07 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085755004 (Fri Apr 12 11:15:55 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085833361 (Fri Apr 12 11:17:13 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085844989 (Fri Apr 12 11:17:24 CDT 2019)
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555085860874 (Fri Apr 12 11:17:40 CDT 2019)
+(20,40)-CMA-ES(mu_eff=11.6), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555088567056 (Fri Apr 12 12:02:47 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555088576900 (Fri Apr 12 12:02:56 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555090795584 (Fri Apr 12 12:39:55 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555090867219 (Fri Apr 12 12:41:07 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555094190025 (Fri Apr 12 13:36:30 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555094269702 (Fri Apr 12 13:37:49 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555094289902 (Fri Apr 12 13:38:09 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555094334516 (Fri Apr 12 13:38:54 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555094348254 (Fri Apr 12 13:39:08 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555097630765 (Fri Apr 12 14:33:50 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555097741886 (Fri Apr 12 14:35:41 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555097772866 (Fri Apr 12 14:36:12 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555100811652 (Fri Apr 12 15:26:51 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555100833983 (Fri Apr 12 15:27:13 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555105399125 (Fri Apr 12 16:43:19 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555105416093 (Fri Apr 12 16:43:36 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555105422528 (Fri Apr 12 16:43:42 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555110912700 (Fri Apr 12 18:15:12 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555111000431 (Fri Apr 12 18:16:40 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555111013732 (Fri Apr 12 18:16:53 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555111036438 (Fri Apr 12 18:17:16 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555116990323 (Fri Apr 12 19:56:30 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555117062613 (Fri Apr 12 19:57:42 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555124297061 (Fri Apr 12 21:58:17 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555124378324 (Fri Apr 12 21:59:38 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555124407286 (Fri Apr 12 22:00:07 CDT 2019)
+(7,15)-CMA-ES(mu_eff=4.5), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555125522965 (Fri Apr 12 22:18:42 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555126470977 (Fri Apr 12 22:34:30 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555126506968 (Fri Apr 12 22:35:06 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1555126540613 (Fri Apr 12 22:35:40 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555127767902 (Fri Apr 12 22:56:07 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555127791851 (Fri Apr 12 22:56:31 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555128431385 (Fri Apr 12 23:07:11 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555128476760 (Fri Apr 12 23:07:56 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555128495576 (Fri Apr 12 23:08:15 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555128555484 (Fri Apr 12 23:09:15 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555129809544 (Fri Apr 12 23:30:09 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1555167464908 (Sat Apr 13 09:57:44 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1555167507637 (Sat Apr 13 09:58:27 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555170163802 (Sat Apr 13 10:42:43 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555170742641 (Sat Apr 13 10:52:22 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555174292570 (Sat Apr 13 11:51:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555174301645 (Sat Apr 13 11:51:41 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555174325006 (Sat Apr 13 11:52:05 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555179332076 (Sat Apr 13 13:15:32 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555179415692 (Sat Apr 13 13:16:55 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555179430849 (Sat Apr 13 13:17:10 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555182831601 (Sat Apr 13 14:13:51 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1555182849492 (Sat Apr 13 14:14:09 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555190423362 (Sat Apr 13 16:20:23 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555192496530 (Sat Apr 13 16:54:56 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555196143720 (Sat Apr 13 17:55:43 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555196186817 (Sat Apr 13 17:56:26 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555196203835 (Sat Apr 13 17:56:43 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555200993328 (Sat Apr 13 19:16:33 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555201004240 (Sat Apr 13 19:16:44 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555201094665 (Sat Apr 13 19:18:14 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1555201113293 (Sat Apr 13 19:18:33 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555211626974 (Sat Apr 13 22:13:46 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555250838739 (Sun Apr 14 09:07:18 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555999735366 (Tue Apr 23 01:08:55 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555999738156 (Tue Apr 23 01:08:58 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555999876586 (Tue Apr 23 01:11:16 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555999918753 (Tue Apr 23 01:11:58 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1555999944932 (Tue Apr 23 01:12:24 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556000309276 (Tue Apr 23 01:18:29 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556000318527 (Tue Apr 23 01:18:38 CDT 2019)
+(75,150)-CMA-ES(mu_eff=40.1), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556032939229 (Tue Apr 23 10:22:19 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556041363334 (Tue Apr 23 12:42:43 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556043120292 (Tue Apr 23 13:12:00 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556043132241 (Tue Apr 23 13:12:12 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556044199279 (Tue Apr 23 13:29:59 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556046653410 (Tue Apr 23 14:10:53 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556046682255 (Tue Apr 23 14:11:22 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556048122067 (Tue Apr 23 14:35:22 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556049580378 (Tue Apr 23 14:59:40 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556051852752 (Tue Apr 23 15:37:32 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556053332045 (Tue Apr 23 16:02:12 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556054933265 (Tue Apr 23 16:28:53 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556056624180 (Tue Apr 23 16:57:04 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556056683776 (Tue Apr 23 16:58:03 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556061396439 (Tue Apr 23 18:16:36 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556065547745 (Tue Apr 23 19:25:47 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556070126169 (Tue Apr 23 20:42:06 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556070152492 (Tue Apr 23 20:42:32 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556078087620 (Tue Apr 23 22:54:47 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556084495873 (Wed Apr 24 00:41:35 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556084594453 (Wed Apr 24 00:43:14 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556084622956 (Wed Apr 24 00:43:42 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556084628869 (Wed Apr 24 00:43:48 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556092770425 (Wed Apr 24 02:59:30 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556100754581 (Wed Apr 24 05:12:34 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556119904396 (Wed Apr 24 10:31:44 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556120158167 (Wed Apr 24 10:35:58 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556120463307 (Wed Apr 24 10:41:03 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556121149717 (Wed Apr 24 10:52:29 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556121390963 (Wed Apr 24 10:56:30 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556122007748 (Wed Apr 24 11:06:47 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556122257569 (Wed Apr 24 11:10:57 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556123055909 (Wed Apr 24 11:24:15 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556123833933 (Wed Apr 24 11:37:13 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556124257860 (Wed Apr 24 11:44:17 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556124425945 (Wed Apr 24 11:47:05 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556124435775 (Wed Apr 24 11:47:15 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556125581697 (Wed Apr 24 12:06:21 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556125593843 (Wed Apr 24 12:06:33 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556128176368 (Wed Apr 24 12:49:36 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556129742973 (Wed Apr 24 13:15:42 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556133522721 (Wed Apr 24 14:18:42 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556134629794 (Wed Apr 24 14:37:09 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556142560267 (Wed Apr 24 16:49:20 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556142579745 (Wed Apr 24 16:49:39 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556142646720 (Wed Apr 24 16:50:46 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1556142658551 (Wed Apr 24 16:50:58 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=16, 0 diagonal iter., randomSeed=1556146561480 (Wed Apr 24 17:56:01 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556427238233 (Sat Apr 27 23:53:58 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556427332224 (Sat Apr 27 23:55:32 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556427389762 (Sat Apr 27 23:56:29 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556427396507 (Sat Apr 27 23:56:36 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556427418058 (Sat Apr 27 23:56:58 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556428616174 (Sun Apr 28 00:16:56 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556429090094 (Sun Apr 28 00:24:50 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556429228669 (Sun Apr 28 00:27:08 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556429564314 (Sun Apr 28 00:32:44 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556430057903 (Sun Apr 28 00:40:57 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556430680955 (Sun Apr 28 00:51:20 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556430807018 (Sun Apr 28 00:53:27 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556431515138 (Sun Apr 28 01:05:15 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=2, 0 diagonal iter., randomSeed=1556432851956 (Sun Apr 28 01:27:31 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556468957349 (Sun Apr 28 11:29:17 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556469041962 (Sun Apr 28 11:30:41 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556469067741 (Sun Apr 28 11:31:07 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556469144960 (Sun Apr 28 11:32:24 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=24, 0 diagonal iter., randomSeed=1556470755975 (Sun Apr 28 11:59:15 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=24, 0 diagonal iter., randomSeed=1556470791724 (Sun Apr 28 11:59:51 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=24, 0 diagonal iter., randomSeed=1556470812302 (Sun Apr 28 12:00:12 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556477438029 (Sun Apr 28 13:50:38 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556477461575 (Sun Apr 28 13:51:01 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556479579204 (Sun Apr 28 14:26:19 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556481045531 (Sun Apr 28 14:50:45 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1556483012839 (Sun Apr 28 15:23:32 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556485341223 (Sun Apr 28 16:02:21 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556485377883 (Sun Apr 28 16:02:57 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=18, 0 diagonal iter., randomSeed=1556487607222 (Sun Apr 28 16:40:07 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=9, 0 diagonal iter., randomSeed=1556492671007 (Sun Apr 28 18:04:31 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=9, 0 diagonal iter., randomSeed=1556502180567 (Sun Apr 28 20:43:00 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556502249820 (Sun Apr 28 20:44:09 CDT 2019)
+(10,20)-CMA-ES(mu_eff=6.2), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556502261733 (Sun Apr 28 20:44:21 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=24, 0 diagonal iter., randomSeed=1556504943153 (Sun Apr 28 21:29:03 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556564628634 (Mon Apr 29 14:03:48 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556564636497 (Mon Apr 29 14:03:56 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556567095547 (Mon Apr 29 14:44:55 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556569256147 (Mon Apr 29 15:20:56 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556569281103 (Mon Apr 29 15:21:21 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556569297589 (Mon Apr 29 15:21:37 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556571377743 (Mon Apr 29 15:56:17 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556574034428 (Mon Apr 29 16:40:34 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556574056265 (Mon Apr 29 16:40:56 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556574069433 (Mon Apr 29 16:41:09 CDT 2019)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556574374447 (Mon Apr 29 16:46:14 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556575912793 (Mon Apr 29 17:11:52 CDT 2019)
+(15,30)-CMA-ES(mu_eff=8.9), Ver="0.99.22", dimension=6, 0 diagonal iter., randomSeed=1556578226491 (Mon Apr 29 17:50:26 CDT 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=24, 0 diagonal iter., randomSeed=1556600042719 (Mon Apr 29 23:54:02 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556923400319 (Fri May 03 17:43:20 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556923523525 (Fri May 03 17:45:23 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556923546519 (Fri May 03 17:45:46 CDT 2019)
+(37,75)-CMA-ES(mu_eff=20.5), Ver="0.99.22", dimension=12, 0 diagonal iter., randomSeed=1556930223648 (Fri May 03 19:37:03 CDT 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572887112282 (Mon Nov 04 11:05:12 CST 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572887174975 (Mon Nov 04 11:06:14 CST 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572887226316 (Mon Nov 04 11:07:06 CST 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572887281499 (Mon Nov 04 11:08:01 CST 2019)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888027239 (Mon Nov 04 11:20:27 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888297951 (Mon Nov 04 11:24:57 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888681776 (Mon Nov 04 11:31:21 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888689430 (Mon Nov 04 11:31:29 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888870309 (Mon Nov 04 11:34:30 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888938184 (Mon Nov 04 11:35:38 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572888955767 (Mon Nov 04 11:35:55 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572889279250 (Mon Nov 04 11:41:19 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572889295328 (Mon Nov 04 11:41:35 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572889506289 (Mon Nov 04 11:45:06 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572889823585 (Mon Nov 04 11:50:23 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572890028433 (Mon Nov 04 11:53:48 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572890211034 (Mon Nov 04 11:56:51 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1572890435986 (Mon Nov 04 12:00:35 CST 2019)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580500416530 (Fri Jan 31 13:53:36 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580500665355 (Fri Jan 31 13:57:45 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4, 0 diagonal iter., randomSeed=1580500704060 (Fri Jan 31 13:58:24 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580502358198 (Fri Jan 31 14:25:58 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580504873329 (Fri Jan 31 15:07:53 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580506817802 (Fri Jan 31 15:40:18 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580507002092 (Fri Jan 31 15:43:22 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580507094450 (Fri Jan 31 15:44:54 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580507319081 (Fri Jan 31 15:48:39 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580509236859 (Fri Jan 31 16:20:37 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580509391733 (Fri Jan 31 16:23:11 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=3, 0 diagonal iter., randomSeed=1580509513309 (Fri Jan 31 16:25:13 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580509530105 (Fri Jan 31 16:25:30 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580510222712 (Fri Jan 31 16:37:02 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4740, 0 diagonal iter., randomSeed=1580510405951 (Fri Jan 31 16:40:06 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580510980951 (Fri Jan 31 16:49:41 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761054544 (Mon Feb 03 14:17:34 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761297844 (Mon Feb 03 14:21:38 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761663212 (Mon Feb 03 14:27:43 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761796883 (Mon Feb 03 14:29:57 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761846954 (Mon Feb 03 14:30:47 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580761864413 (Mon Feb 03 14:31:04 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580762381477 (Mon Feb 03 14:39:41 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580762427182 (Mon Feb 03 14:40:27 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580762954685 (Mon Feb 03 14:49:14 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580762991057 (Mon Feb 03 14:49:51 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580763156840 (Mon Feb 03 14:52:37 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580763290654 (Mon Feb 03 14:54:50 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580845352172 (Tue Feb 04 13:42:32 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580845411402 (Tue Feb 04 13:43:31 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580845424636 (Tue Feb 04 13:43:44 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580845514535 (Tue Feb 04 13:45:14 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580845794522 (Tue Feb 04 13:49:54 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580846028714 (Tue Feb 04 13:53:48 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580846097722 (Tue Feb 04 13:54:57 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580846722530 (Tue Feb 04 14:05:22 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580846883329 (Tue Feb 04 14:08:03 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580857744962 (Tue Feb 04 17:09:05 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580857785880 (Tue Feb 04 17:09:46 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580857858501 (Tue Feb 04 17:10:58 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580857916698 (Tue Feb 04 17:11:56 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580858003112 (Tue Feb 04 17:13:23 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580858051517 (Tue Feb 04 17:14:11 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859236354 (Tue Feb 04 17:33:56 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859282204 (Tue Feb 04 17:34:42 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859329810 (Tue Feb 04 17:35:30 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859390178 (Tue Feb 04 17:36:30 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859626052 (Tue Feb 04 17:40:26 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580859845302 (Tue Feb 04 17:44:05 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580860170868 (Tue Feb 04 17:49:31 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580860234888 (Tue Feb 04 17:50:35 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580860727187 (Tue Feb 04 17:58:47 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580860760818 (Tue Feb 04 17:59:21 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580860977391 (Tue Feb 04 18:02:57 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580861005950 (Tue Feb 04 18:03:26 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580861129322 (Tue Feb 04 18:05:29 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580861197673 (Tue Feb 04 18:06:37 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580862690328 (Tue Feb 04 18:31:30 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580863438642 (Tue Feb 04 18:43:58 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580863571362 (Tue Feb 04 18:46:11 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580863807868 (Tue Feb 04 18:50:08 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580864041940 (Tue Feb 04 18:54:02 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580864055780 (Tue Feb 04 18:54:15 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580864099058 (Tue Feb 04 18:54:59 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580864153849 (Tue Feb 04 18:55:54 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580864297647 (Tue Feb 04 18:58:17 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580919719219 (Wed Feb 05 10:21:59 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580919904749 (Wed Feb 05 10:25:04 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580922528849 (Wed Feb 05 11:08:49 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580922663576 (Wed Feb 05 11:11:03 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580922688357 (Wed Feb 05 11:11:28 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580922859499 (Wed Feb 05 11:14:19 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580923029748 (Wed Feb 05 11:17:09 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580925285015 (Wed Feb 05 11:54:45 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580925729020 (Wed Feb 05 12:02:09 CST 2020)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580926276326 (Wed Feb 05 12:11:16 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580926352375 (Wed Feb 05 12:12:32 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580927359084 (Wed Feb 05 12:29:19 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=4612, 0 diagonal iter., randomSeed=1580927961894 (Wed Feb 05 12:39:22 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928103187 (Wed Feb 05 12:41:43 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928168559 (Wed Feb 05 12:42:48 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928218619 (Wed Feb 05 12:43:38 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928335790 (Wed Feb 05 12:45:35 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928517918 (Wed Feb 05 12:48:38 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1580928581310 (Wed Feb 05 12:49:41 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581010859053 (Thu Feb 06 11:40:59 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581099430361 (Fri Feb 07 12:17:10 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581099990335 (Fri Feb 07 12:26:30 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581100859624 (Fri Feb 07 12:40:59 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581101182927 (Fri Feb 07 12:46:23 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581101439154 (Fri Feb 07 12:50:39 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581102286305 (Fri Feb 07 13:04:46 CST 2020)
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+ CMA-ES warning: flat fitness landscape, consider reformulation of fitness, step-size increased
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581104613749 (Fri Feb 07 13:43:33 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581105055154 (Fri Feb 07 13:50:55 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581108331392 (Fri Feb 07 14:45:31 CST 2020)
+(50,100)-CMA-ES(mu_eff=27.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581110253196 (Fri Feb 07 15:17:33 CST 2020)
+(250,500)-CMA-ES(mu_eff=128.9), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581110391021 (Fri Feb 07 15:19:51 CST 2020)
+(25,50)-CMA-ES(mu_eff=14.2), Ver="0.99.22", dimension=5388, 0 diagonal iter., randomSeed=1581111214564 (Fri Feb 07 15:33:34 CST 2020)
