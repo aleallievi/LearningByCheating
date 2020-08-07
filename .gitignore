@@ -2,6 +2,10 @@ cma_results/*
 ckpts/*
 *.sw*
 training/rl_ifo_mujoco/*
+PythonAPI/carla/
+PythonAPI/examples/
+PythonAPI/utils/
+training/outcmaes/
 
 **/__pycache__
 HDMaps/*

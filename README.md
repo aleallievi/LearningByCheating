@@ -1,3 +1,14 @@
+# LbC + ES IMPORTANT NOTE
+
+The base code of this repo is based on the Learning by Cheating paper (below). To set up this repo, follow
+the instructions below. There may be some minor differences, there will be an apt note at points of difference.
+
+This repo also contains additional files/changes in functionality for our specific case.
+
+After following the instructions below to set up the CARLA server, get relevant models etc, run the following command
+from the `carla_lbc/training` directory: `python cmaes/cma-es/cma-es.py </path/to/results/> </path/to/configfile> --pop_size <pop_size> --run_local`. An example command is:
+`python cmaes/cma-es/cma-es.py ~/projects/CL_AD/ES/carla_lbc/cma_results ~/projects/CL_AD/ES/carla_lbc/training/rl_ifo_mujoco/cma_config_files/config_carla.py --pop_size 28 --run_local`
+
 # Learning by Cheating
 
 This repo is the implemention of paper Learning by Cheating in CARLA 0.9.6.
@@ -52,8 +63,16 @@ wget http://www.cs.utexas.edu/~dchen/lbc_release/navmesh/Town02.bin
 mv Town*.bin CarlaUE4/Content/Carla/Maps/Nav/
 
 # Create conda environment
-conda env create -f environment.yml
-conda activate carla
+# commented instruction below was in original instruction by LbC
+# conda env create -f environment.yml
+conda create -f environment_RL.yml
+conda activate carla_ES
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+conda install psutil
+pip install cma
+# note there may be one or two other libraries to install, if you run the 
+# command in the IMPORTANT NOTE section (above), you should be able 
+# to see which ones those are. Sorry!
 
 # Install carla client
 cd PythonAPI/carla/dist
