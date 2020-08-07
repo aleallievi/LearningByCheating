@@ -126,7 +126,8 @@ def rollout(net,
                     coll_veh_pen *= 0.6
                 elif c == TrafficEventType.COLLISION_PEDESTRIAN:
                     coll_ped_pen *= 0.5
-            
+           
+            # computing driving score of episode
             infraction_pen = stop_pen * red_pen * (coll_stat_pen * coll_veh_pen * coll_ped_pen)
             score = route_comp * infraction_pen
             end_t = time.time()
@@ -159,14 +160,17 @@ def train(output_file, params_file, cur_ind, model_path, config):
         ReplayBuffer, 
         load_image_model,
         )
-    
+   
+    # load pre-trained model
     net = load_image_model(
         config['model_args']['backbone'], 
         model_path,
         device=config['device'])
 
+    # load CMAES parameters, cur_id is the population member id i.e. [0, pop_size-1]
     params = np.load(params_file)['params'][cur_ind]
 
+    # overwrite weights
     di = net.state_dict()
     st = 0
     for i in range(4):
@@ -236,6 +240,8 @@ if __name__ == '__main__':
     model_path = parsed.model_path
     params_file = parsed.params_file
 
+    # specify port to launch server on and connect agent to
+    # specify which device to use CPU or GPU etc
     config = {
             'seed':parsed.seed,
             'port': parsed.port,
@@ -277,9 +283,12 @@ if __name__ == '__main__':
         if PROCNAME in proc.name():
             pid = proc.pid
             #os.kill(pid, 9)
-    # launch carla server
+    
+    # environment variable to set to allocate this job to a specific GPU
+    # for example, what to set to 2nd GPU, the parsed.gpu_num = 2
     os.environ['CUDA_VISIBLE_DEVICES'] = '{}'.format(parsed.gpu_num)
     
+    # launch carla server
     carla_process = launch_carla(port = config['port'])
     print ('Launching carla on GPU {} and port {}'.format(parsed.gpu_num, parsed.port))
     

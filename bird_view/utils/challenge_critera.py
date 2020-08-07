@@ -23,7 +23,7 @@ import time
 import carla
 
 from .traffic_events import TrafficEvent, TrafficEventType
-from .carla_data_provider import CarlaDataProvider
+#from .carla_data_provider import CarlaDataProvider
 
 class Criterion():
 

@@ -7,7 +7,7 @@ This repo also contains additional files/changes in functionality for our specif
 
 After following the instructions below to set up the CARLA server, get relevant models etc, run the following command
 from the `carla_lbc/training` directory: `python cmaes/cma-es/cma-es.py </path/to/results/> </path/to/configfile> --pop_size <pop_size> --run_local`. An example command is:
-`python cmaes/cma-es/cma-es.py ~/projects/CL_AD/ES/carla_lbc/cma_results ~/projects/CL_AD/ES/carla_lbc/training/rl_ifo_mujoco/cma_config_files/config_carla.py --pop_size 32 --run_local`
+`python cmaes/cma-es/cma-es.py ~/projects/CL_AD/ES/carla_lbc/cma_results ~/projects/CL_AD/ES/carla_lbc/training/rl_ifo_mujoco/cma_config_files/config_carla.py --pop_size 32 --run_local 2> /tmp/null`. The last bit is to pipe std error to a dummy file.
 
 Note that `<pop_size>` should be a multiple of number of jobs that are running at a given time AND >= 25 (some weird minimum required by the cma library). For example, if 8 jobs are running at a time (say, 2 per GPU), the `pop_size=32`
 

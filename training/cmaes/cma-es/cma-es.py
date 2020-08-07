@@ -61,11 +61,11 @@ def parse_unknown_args(args):
     return retval
 
 
-def load(file):
+def load(fi):
     """Load config variables from file."""
     try:
         import imp
-        with open(file) as f:
+        with open(fi) as f:
             m = imp.load_source('m', '', f)
     except Exception:
         print('Could not load config file. Continuing.')
@@ -84,7 +84,8 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
     """Run individuals locally."""
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
     np.savez(params_file, params=solutions)
-    
+   
+    # jobs to run per gpu, number of gpus, number of jobs running per time
     jobs_per_gpu = 2
     NUM_GPU = 4
     num_jobs = NUM_GPU * jobs_per_gpu
@@ -93,10 +94,12 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
     st_t = time.time()
     for i in range(0, len(inds), num_jobs):
         launched_procs = []
+        # launching fixed number of jobs per time
         for j in range(num_jobs):
             ind = inds[i + j]
             seed = seeds[i + j]
             #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
+            # file to save results in
             value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind)
             cmd = executable + ' '
             for val in pre_value_args:
@@ -104,6 +107,8 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             cmd += ' %s ' % value_file
             for val in exec_args:
                 cmd += '%s ' % val
+
+            # specifying port, gpu number, seed
             cmd += '--params_file=%s ' % params_file
             cmd += '--gpu_num {} '.format(j // jobs_per_gpu)
             cmd += '--port {} '.format((j + 2) * 1000)
@@ -115,18 +120,6 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             proc = subprocess.Popen(cmd.split())
             #proc.wait()
             launched_procs.append(proc)
-        '''
-        # continue when all jobs finish
-        while True:
-            count = 0
-            for pr in launched_procs:
-                poll = p.poll()
-                if poll is not None:
-                    count += 1
-            if count == num_jobs:
-                print ('All jobs running jobs terminated, starting next batch')
-                break
-        '''
         print ('----- WAITING FOR JOBS TO FINISH -----')
         exit_codes = [p.wait() for p in launched_procs]
         end_t = time.time()
@@ -135,6 +128,7 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
         # kill existing carla servers
         PROCNAME = "Carla"
 
+        # kill any instance of CARLA before starting again
         for proc in psutil.process_iter():
             if PROCNAME in proc.name():
                 pid = proc.pid
@@ -161,7 +155,6 @@ def run_local(experiment_path, solutions, gen, inds, seeds, retries=0):
         # proc = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
         proc = subprocess.Popen(cmd.split())
         proc.wait()
-
 
 #Requirements = ARCH == "X86_64" && !GPU
 #Requirements=InPublic
@@ -331,18 +324,11 @@ def main():  # noqa
     # Argument usage information
     flags, unknown_args = parser.parse_known_args()
     
-    #if flags.start_iter == 1 and flags.pop_size is None:
-    #    print('Must provide population size if not continuing')
-    #    return
-    #if flags.num_iters == 0:
-    #    return
     global executable
-    #n_iters = flags.num_iters
-    #pop_size = flags.pop_size
     experiment_path = flags.experiment_path
     process_path = os.path.join(experiment_path, 'process')
     result_path = os.path.join(experiment_path, 'results')
-
+    import pdb; pdb.set_trace()
     # Load config variables
     load(flags.config_file)
     if flags.executable is not None:
@@ -357,13 +343,12 @@ def main():  # noqa
         os.mkdir(experiment_path)
     if not os.path.exists(process_path):
         os.mkdir(process_path)
-    #if start_iter == 1 and os.path.exists(result_path):
-    #    shutil.rmtree(result_path)
     if os.path.exists(result_path):
         shutil.rmtree(result_path)
     if not os.path.exists(result_path):
         os.mkdir(result_path)
 
+    # loading params of pre-trained model to tune (already saved in file beforehand)
     model_params = []
     with open('/home/boschaustin/projects/CL_AD/ES/carla_lbc/training/model_seed_params.txt', 'r') as f:
         line = f.readline()
@@ -371,6 +356,7 @@ def main():  # noqa
             model_params.append(float(line))
             line = f.readline()
 
+    # create CMAES object and variance to perturb each parameter
     es = cma.CMAEvolutionStrategy(model_params, 0.05)
 
     #for itr in range(start_iter, n_iters + 1):  # CMA-ES code requires 1-indexing
@@ -383,11 +369,12 @@ def main():  # noqa
             solutions = es.ask(flags.pop_size)
         pop_size = len(solutions)
         inds = [i for i in range(pop_size)]
-        seeds = np.random.randint(1e10, size=pop_size)
+        seeds = np.random.randint(0.4e10, size=pop_size)
         # Evaluate population
         if flags.run_local:
             run_local_GPU(experiment_path, solutions, itr, inds, seeds)
         else:
+            # NOTE: no quality assurance on the else branch here. Was used for condor
             retry = 1
             main_jobs = run_on_condor(experiment_path, solutions, itr, inds, seeds, retries=0)
             time.sleep(sleep_time)
@@ -492,6 +479,7 @@ def main():  # noqa
 
         itr += 1
 
+    print ('CMA-ES finished')
 
 if __name__ == '__main__':
     main()
