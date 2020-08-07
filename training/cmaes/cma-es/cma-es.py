@@ -107,6 +107,7 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             cmd += '--params_file=%s ' % params_file
             cmd += '--gpu_num {} '.format(j // jobs_per_gpu)
             cmd += '--port {} '.format((j + 2) * 1000)
+            cmd += '--seed {} '.format(seed)
             for key, val in exec_kwargs.items():
                 cmd += '%s %s ' % (key, val)
             print(cmd)

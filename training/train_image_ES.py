@@ -46,9 +46,9 @@ CROP_SIZE = 192
 MAP_SIZE = 320
 SAVE_EPISODES = list(range(20))
 
-def rollout(replay_buffer, net,  
+def rollout(net,  
         image_agent_kwargs=dict(), episode_length=1000,
-        n_vehicles=100, n_pedestrians=250, port=2000, planner="new"):
+        n_vehicles=100, n_pedestrians=250, port=2000, planner="new", seed = 2020):
 
     from models.image import ImageAgent
     
@@ -70,9 +70,9 @@ def rollout(replay_buffer, net,
                 'n_pedestrians': n_pedestrians,
                 'n_vehicles': n_vehicles,
                 }
-
+            # seems hacky, taken from https://github.com/dianchen96/LearningByCheating/blob/release-0.9.6/benchmark/run_benchmark.py#L167
+            env.seed = seed
             env.init(**env_params)
-            dist_to_cover = env.get_distance_start_to_goal()
 
             # success distance threshold from target
             env.success_dist = 10.0
@@ -191,9 +191,7 @@ def train(output_file, params_file, cur_ind, model_path, config):
     
     image_agent_kwargs = { 'camera_args' : config["agent_args"]['camera_args'] }
 
-    replay_buffer = ReplayBuffer(**config["buffer_args"])
-    
-    ret = rollout(replay_buffer, net, image_agent_kwargs=image_agent_kwargs, port=config['port'])
+    ret = rollout(net, image_agent_kwargs=image_agent_kwargs, port=config['port'], seed = config['seed'])
 
     all_dists = []
     total_fit = ret
@@ -230,6 +228,7 @@ if __name__ == '__main__':
 
     # Misc
     parser.add_argument('--port', type=int, default=2000)
+    parser.add_argument('--seed', type=int, default=2020)
     parsed = parser.parse_args()
 
     output_file = parsed.result_file
@@ -238,6 +237,7 @@ if __name__ == '__main__':
     params_file = parsed.params_file
 
     config = {
+            'seed':parsed.seed,
             'port': parsed.port,
             'log_dir': parsed.log_dir,
             'log_iterations': parsed.log_iterations,
