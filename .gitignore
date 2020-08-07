@@ -4,7 +4,7 @@ ckpts/*
 training/rl_ifo_mujoco/*
 PythonAPI/carla/*
 PythonAPI/examples/*
-PythonAPI/utils/*
+PythonAPI/util/*
 training/outcmaes/*
 
 **/__pycache__

@@ -7,7 +7,16 @@ This repo also contains additional files/changes in functionality for our specif
 
 After following the instructions below to set up the CARLA server, get relevant models etc, run the following command
 from the `carla_lbc/training` directory: `python cmaes/cma-es/cma-es.py </path/to/results/> </path/to/configfile> --pop_size <pop_size> --run_local`. An example command is:
-`python cmaes/cma-es/cma-es.py ~/projects/CL_AD/ES/carla_lbc/cma_results ~/projects/CL_AD/ES/carla_lbc/training/rl_ifo_mujoco/cma_config_files/config_carla.py --pop_size 28 --run_local`
+`python cmaes/cma-es/cma-es.py ~/projects/CL_AD/ES/carla_lbc/cma_results ~/projects/CL_AD/ES/carla_lbc/training/rl_ifo_mujoco/cma_config_files/config_carla.py --pop_size 32 --run_local`
+
+Note that `<pop_size>` should be a multiple of number of jobs that are running at a given time AND >= 25 (some weird minimum required by the cma library). For example, if 8 jobs are running at a time (say, 2 per GPU), the `pop_size=32`
+
+The above script will do the following:
+- load in the paramters of LbC model to tweak from a file (cmaes/cma-es/cma-es.py)
+- create the cmaes object (cmaes/cma-es/cma-es.py)
+- launch a fixed number of jobs and allocate them to the GPUs (cmaes/cma-es/cma-es.py), and wait for them to terminate
+- launch the CARLA server (training/train_image_ES.py)
+- start training (training/train_image_ES.py)
 
 # Learning by Cheating
 
