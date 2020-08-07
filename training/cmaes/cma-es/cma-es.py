@@ -15,6 +15,7 @@ import glob
 import shutil
 import numpy as np
 import cma
+import random
 
 parser = argparse.ArgumentParser(
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -84,7 +85,12 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
     """Run individuals locally."""
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
     np.savez(params_file, params=solutions)
-   
+ 
+    # keeping the same environment seed for all members of the population i.e.
+    # ensures that while params are different, the environment it was tested on
+    # was as similar as possible (CARLA ay have some of its own randomness that
+    # may not be accounted for as mentioned here: https://github.com/dianchen96/LearningByCheating#benchmarking-models)
+    env_seed = random.randint(1, 1e9)
     # jobs to run per gpu, number of gpus, number of jobs running per time
     jobs_per_gpu = 2
     NUM_GPU = 4
@@ -97,6 +103,7 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
         # launching fixed number of jobs per time
         for j in range(num_jobs):
             ind = inds[i + j]
+            # note this seed is diferent from seed used to generate environment 
             seed = seeds[i + j]
             #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
             # file to save results in
@@ -112,7 +119,7 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             cmd += '--params_file=%s ' % params_file
             cmd += '--gpu_num {} '.format(j // jobs_per_gpu)
             cmd += '--port {} '.format((j + 2) * 1000)
-            cmd += '--seed {} '.format(seed)
+            cmd += '--seed {} '.format(env_seed)
             for key, val in exec_kwargs.items():
                 cmd += '%s %s ' % (key, val)
             print(cmd)
@@ -357,7 +364,7 @@ def main():  # noqa
             line = f.readline()
 
     # create CMAES object and variance to perturb each parameter
-    es = cma.CMAEvolutionStrategy(model_params, 0.05)
+    es = cma.CMAEvolutionStrategy(model_params, 0.01)
 
     #for itr in range(start_iter, n_iters + 1):  # CMA-ES code requires 1-indexing
     itr = 0
