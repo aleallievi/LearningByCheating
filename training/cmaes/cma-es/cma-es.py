@@ -16,6 +16,7 @@ import shutil
 import numpy as np
 import cma
 import random
+import pdb
 
 parser = argparse.ArgumentParser(
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -128,18 +129,29 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             #proc.wait()
             launched_procs.append(proc)
         print ('----- WAITING FOR JOBS TO FINISH -----')
-        exit_codes = [p.wait() for p in launched_procs]
+        for p in launched_procs:
+            try:
+                # wait for an hr
+                p.wait(timeout = 3600)
+            except TimeoutExpired:
+                p.kill()
         end_t = time.time()
         print ('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
         #time.sleep(jobs_per_gpu * 1200)
         # kill existing carla servers
         PROCNAME = "Carla"
 
+        # above only kills the python training process, but still need to kill
+        # carla server that was launched by that process (already done
+        # in training code, but this here also as a safety measure)
         # kill any instance of CARLA before starting again
         for proc in psutil.process_iter():
             if PROCNAME in proc.name():
                 pid = proc.pid
                 os.kill(pid, 9)
+
+        #print ('break point')
+        #pdb.set_trace()
 
 def run_local(experiment_path, solutions, gen, inds, seeds, retries=0):
     """Run individuals locally."""
@@ -335,7 +347,6 @@ def main():  # noqa
     experiment_path = flags.experiment_path
     process_path = os.path.join(experiment_path, 'process')
     result_path = os.path.join(experiment_path, 'results')
-    import pdb; pdb.set_trace()
     # Load config variables
     load(flags.config_file)
     if flags.executable is not None:
@@ -364,7 +375,7 @@ def main():  # noqa
             line = f.readline()
 
     # create CMAES object and variance to perturb each parameter
-    es = cma.CMAEvolutionStrategy(model_params, 0.01)
+    es = cma.CMAEvolutionStrategy(model_params, 0.005)
 
     #for itr in range(start_iter, n_iters + 1):  # CMA-ES code requires 1-indexing
     itr = 0
@@ -469,6 +480,8 @@ def main():  # noqa
             src = os.path.join(result_path, 'run_%d_i_%d.txt' % (itr, ind))
             dest = os.path.join(result_path, 'value_%d_i_%d.txt' % (itr, ind))
             if os.path.exists(src):
+                # note: taking negative of fitness score since cma library
+                # minimizes objective
                 with open(src) as f:
                     values.append(-float(f.readline()))
                 temp_sol.append(solutions[ind])
@@ -485,6 +498,7 @@ def main():  # noqa
             print('Evaluation done for generation %d' % itr)
 
         itr += 1
+        print ('finished iteration {}'.format(itr))
 
     print ('CMA-ES finished')
 
