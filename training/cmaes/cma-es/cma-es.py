@@ -17,6 +17,7 @@ import numpy as np
 import cma
 import random
 import pdb
+import pickle
 
 parser = argparse.ArgumentParser(
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
@@ -82,16 +83,14 @@ def load(fi):
     if hasattr(m, 'wait_limit'): wait_limit = m.wait_limit  # noqa
     if hasattr(m, 'log_enabled'): log_enabled = m.log_enabled  # noqa
 
+# TODO are all jobs launched at once, meaning that finished jobs aren't immediately replaced?
 def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
     """Run individuals locally."""
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
     np.savez(params_file, params=solutions)
- 
-    # keeping the same environment seed for all members of the population i.e.
-    # ensures that while params are different, the environment it was tested on
-    # was as similar as possible (CARLA ay have some of its own randomness that
-    # may not be accounted for as mentioned here: https://github.com/dianchen96/LearningByCheating#benchmarking-models)
-    env_seed = random.randint(1, 1e9)
+    
+    # TODO some of these params should be set up top (or in a config file)
+    env_seed = 0 # using 0 seed, the most common one used by LbC; same seed creates less variation in evaluation; note either CARLA or the LbC model have their own stochasticity, independent of this seed TODO use the same seed for the policy if it's probabilistic
     # jobs to run per gpu, number of gpus, number of jobs running per time
     jobs_per_gpu = 2
     NUM_GPU = 4
@@ -105,10 +104,13 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
         for j in range(num_jobs):
             ind = inds[i + j]
             # note this seed is diferent from seed used to generate environment 
-            seed = seeds[i + j]
+            seed = seeds[i + j] # TODO see if no errors after this is deleted
             #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
-            # file to save results in
-            value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind)
+            
+            # set file path to save results in
+            value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind) # TODO if there's only one line of text per file, why not just append all results to the same file?
+            
+            # create command-line string to run a job 
             cmd = executable + ' '
             for val in pre_value_args:
                 cmd += '%s ' % val
@@ -118,22 +120,26 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
 
             # specifying port, gpu number, seed
             cmd += '--params_file=%s ' % params_file
-            cmd += '--gpu_num {} '.format(j // jobs_per_gpu)
+            cmd += '--gpu_num {} '.format(j // jobs_per_gpu) # TODO assign to GPU based on availability of GPUs and constraints in config
             cmd += '--port {} '.format((j + 2) * 1000)
             cmd += '--seed {} '.format(env_seed)
             for key, val in exec_kwargs.items():
                 cmd += '%s %s ' % (key, val)
+            
+            ## Spawn new process ##
             print(cmd)
             # proc = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
             proc = subprocess.Popen(cmd.split())
             #proc.wait()
             launched_procs.append(proc)
+
         print ('----- WAITING FOR JOBS TO FINISH -----')
         for p in launched_procs:
             try:
                 # wait for an hr
-                p.wait(timeout = 3600)
+                p.wait(timeout = 3600) # TODO have CARLA terminate runs before this would, so we can have a bad score included
             except TimeoutExpired:
+                print('Killing process after timeout. Gen', gen, ', indiv', ind)  
                 p.kill()
         end_t = time.time()
         print ('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
@@ -153,6 +159,8 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
         #print ('break point')
         #pdb.set_trace()
 
+# NOT USED
+'''
 def run_local(experiment_path, solutions, gen, inds, seeds, retries=0):
     """Run individuals locally."""
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
@@ -174,12 +182,14 @@ def run_local(experiment_path, solutions, gen, inds, seeds, retries=0):
         # proc = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
         proc = subprocess.Popen(cmd.split())
         proc.wait()
+'''
 
+'''
 #Requirements = ARCH == "X86_64" && !GPU
 #Requirements=InPublic
 #Requirements = ARCH == "X86_64" && !GPU
 def run_on_condor(experiment_path, solutions, gen, inds, seeds, retries=0):
-    """Launch evaluations for given generation and population members."""
+    #Launch evaluations for given generation and population members.
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
     np.savez(params_file, params=solutions)
     ids = []
@@ -199,7 +209,7 @@ Rank = -SlotId + !InMastodon*10
 +ProjectDescription = "CMA-ES Experiments"
 
 Input = /dev/null
-""" % executable
+"""  % executable
         if log_enabled:
             condor_contents += 'Error = %s/process/error-%d-%d-%d.err\n' % (experiment_path, gen, ind, retries)  # noqa
             condor_contents += 'Output = %s/process/out-%d-%d-%d.out\n' % (experiment_path, gen, ind, retries)  # noqa
@@ -236,10 +246,10 @@ Input = /dev/null
         time.sleep(0.05)
     print('Submitted %d jobs' % len(inds))
     return ids
+'''
 
-
+# Generate samples / population for next evaluation.
 def cma_es(experiment_path, gen, pop_size=0, in_file=None, seed=None):
-    """Generate samples / population for next evaluation."""
     print(experiment_path, gen, pop_size, in_file, seed)
     current_dir = os.path.dirname(os.path.realpath(sys.argv[0]))
     seed_path = in_file
@@ -335,6 +345,9 @@ def remove_failed_jobs_from_list(main_jobs, failed_jobs):
             temp_running.append(j)
     return temp_running
 
+
+
+
 def main():  # noqa
 
     global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled
@@ -343,7 +356,11 @@ def main():  # noqa
     # Argument usage information
     flags, unknown_args = parser.parse_known_args()
     
-    global executable
+    ##
+    # Set up file handling and load pre-trained model
+    ##
+
+    global executable # TODO redundant?
     experiment_path = flags.experiment_path
     process_path = os.path.join(experiment_path, 'process')
     result_path = os.path.join(experiment_path, 'results')
@@ -374,20 +391,27 @@ def main():  # noqa
             model_params.append(float(line))
             line = f.readline()
 
-    # create CMAES object and variance to perturb each parameter
-    es = cma.CMAEvolutionStrategy(model_params, 0.005)
 
+    ##
+    # Start CMA-ES process in a never-ending loop
+    ##
+
+    # create CMAES object and variance to perturb each parameter
+    es = cma.CMAEvolutionStrategy(model_params, 0.0005) # TODO check the appropriateness of this variance value
+    
     #for itr in range(start_iter, n_iters + 1):  # CMA-ES code requires 1-indexing
     itr = 0
-    while not es.stop():
+    while not es.stop(): # 1 loop per generation
+        
         # Generate population
         if flags.pop_size == -1:
-            solutions = es.ask()
+            solutions = es.ask() # TODO change "solutions" variable name to "drawn_params"
         else:
             solutions = es.ask(flags.pop_size)
         pop_size = len(solutions)
         inds = [i for i in range(pop_size)]
-        seeds = np.random.randint(0.4e10, size=pop_size)
+        seeds = np.random.randint(0.4e10, size=pop_size) # TODO Is this used?
+
         # Evaluate population
         if flags.run_local:
             run_local_GPU(experiment_path, solutions, itr, inds, seeds)
@@ -491,8 +515,11 @@ def main():  # noqa
                     raise e
 
         #es.tell(solutions, values)
-        es.tell(temp_sol, values)
+        es.tell(temp_sol, values) # send results to CMA-ES, to be used for sampling the next population
+        filename = 'cma-state'
+        open(filename, 'wb').write(es.pickle_dumps())
         es.logger.add()
+
 
         with open(os.path.join(result_path, 'valuationdone_%d.txt' % itr), 'w'):
             print('Evaluation done for generation %d' % itr)
