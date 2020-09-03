@@ -67,9 +67,9 @@ def parse_unknown_args(args):
 def load(fi):
     """Load config variables from file."""
     try:
-        import imp
-        with open(fi) as f:
-            m = imp.load_source('m', '', f)
+        # loading module via 'importlib', 'imp' deprecated with python3.5
+        from importlib.machinery import SourceFileLoader
+        m = SourceFileLoader('', fi).load_module()
     except Exception:
         print('Could not load config file. Continuing.')
         return
@@ -110,7 +110,7 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
             # set file path to save results in
             value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind) # TODO if there's only one line of text per file, why not just append all results to the same file?
             
-            # create command-line string to run a job 
+            # create command-line string to run a job
             cmd = executable + ' '
             for val in pre_value_args:
                 cmd += '%s ' % val
@@ -137,8 +137,8 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
         for p in launched_procs:
             try:
                 # wait for an hr
-                p.wait(timeout = 3600) # TODO have CARLA terminate runs before this would, so we can have a bad score included
-            except TimeoutExpired:
+                p.wait(timeout=3600) # TODO have CARLA terminate runs before this would, so we can have a bad score included
+            except subprocess.TimeoutExpired:
                 print('Killing process after timeout. Gen', gen, ', indiv', ind)  
                 p.kill()
         end_t = time.time()
@@ -416,42 +416,46 @@ def main():  # noqa
         if flags.run_local:
             run_local_GPU(experiment_path, solutions, itr, inds, seeds)
         else:
-            # NOTE: no quality assurance on the else branch here. Was used for condor
-            retry = 1
-            main_jobs = run_on_condor(experiment_path, solutions, itr, inds, seeds, retries=0)
-            time.sleep(sleep_time)
-            failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
-            completed_inds = []
-            while True:
-                if len(failed_jobs) > 0:
-                    # update main jobs list
-                    main_jobs = remove_failed_jobs_from_list(main_jobs, failed_jobs)
-                    # relaunch failed pop members
-                    remaining_inds = [j[1] for j in failed_jobs]
-                    if len(completed_inds) > 0:
-                        temp_rem_inds = []
-                        for j in remaining_inds:
-                            if j not in completed_inds:
-                                temp_rem_inds.append(j)
-                        remaining_inds = temp_rem_inds
-                    print ('number of failed jobs {}'.format(len(remaining_inds)))
-                    relaunched_jobs = run_on_condor(experiment_path, solutions, itr, remaining_inds, seeds[remaining_inds], retries=retry)
-                    retry += 1
-                    # add newly launched jobs to main running list
-                    for rj in relaunched_jobs:
-                        main_jobs.append(rj)
-                    assert len(main_jobs)  - len(completed_inds) == pop_size
+            print('failed to parse flag --run_local')
+            break
 
-                print ('number of completed jobs {}'.format(len(completed_inds)))
-                print('Waiting for %d unfinished jobs. Sleeping for %ds' % (len(main_jobs),
-                                                                            sleep_time))
-                time.sleep(sleep_time)
-                failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
-
-                completed_inds = get_completed_trials(result_path, itr, pop_size)
-                incomplete_inds = get_remaining_trials(result_path, itr, pop_size)
-                if len(incomplete_inds) <= 0.1 * pop_size:
-                    break
+        # else:
+        #     # NOTE: no quality assurance on the else branch here. Was used for condor
+        #     retry = 1
+        #     main_jobs = run_on_condor(experiment_path, solutions, itr, inds, seeds, retries=0)
+        #     time.sleep(sleep_time)
+        #     failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
+        #     completed_inds = []
+        #     while True:
+        #         if len(failed_jobs) > 0:
+        #             # update main jobs list
+        #             main_jobs = remove_failed_jobs_from_list(main_jobs, failed_jobs)
+        #             # relaunch failed pop members
+        #             remaining_inds = [j[1] for j in failed_jobs]
+        #             if len(completed_inds) > 0:
+        #                 temp_rem_inds = []
+        #                 for j in remaining_inds:
+        #                     if j not in completed_inds:
+        #                         temp_rem_inds.append(j)
+        #                 remaining_inds = temp_rem_inds
+        #             print ('number of failed jobs {}'.format(len(remaining_inds)))
+        #             relaunched_jobs = run_on_condor(experiment_path, solutions, itr, remaining_inds, seeds[remaining_inds], retries=retry)
+        #             retry += 1
+        #             # add newly launched jobs to main running list
+        #             for rj in relaunched_jobs:
+        #                 main_jobs.append(rj)
+        #             assert len(main_jobs)  - len(completed_inds) == pop_size
+        #
+        #         print ('number of completed jobs {}'.format(len(completed_inds)))
+        #         print('Waiting for %d unfinished jobs. Sleeping for %ds' % (len(main_jobs),
+        #                                                                     sleep_time))
+        #         time.sleep(sleep_time)
+        #         failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
+        #
+        #         completed_inds = get_completed_trials(result_path, itr, pop_size)
+        #         incomplete_inds = get_remaining_trials(result_path, itr, pop_size)
+        #         if len(incomplete_inds) <= 0.1 * pop_size:
+        #             break
 
             '''
             remaining_inds = get_remaining_trials(result_path, itr, pop_size)
