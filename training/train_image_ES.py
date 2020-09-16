@@ -4,15 +4,11 @@ import psutil
 import argparse
 import numpy as np
 import time
-
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
 from pathlib import Path
-
 import tqdm
-
 import glob
 import sys
 import torch
@@ -26,6 +22,11 @@ try:
 except IndexError as e:
     pass
 
+from bird_view.utils.traffic_events import TrafficEventType
+from bird_view.utils import carla_utils as cu
+from benchmark import make_suite
+
+
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
         return True
@@ -34,10 +35,6 @@ def str2bool(v):
     else:
         raise argparse.ArgumentTypeError('Boolean value expected.')
 
-from bird_view.utils.traffic_events import TrafficEventType
-
-from bird_view.utils import carla_utils as cu
-from benchmark import make_suite
 
 BACKBONE = 'resnet34'
 GAP = 5
@@ -46,12 +43,13 @@ CROP_SIZE = 192
 MAP_SIZE = 320
 SAVE_EPISODES = list(range(20))
 
+
 def rollout(net,  
         image_agent_kwargs=dict(), episode_length=1000,
-        n_vehicles=100, n_pedestrians=250, port=2000, planner="new", seed = 2020):
+        n_vehicles=100, n_pedestrians=250, port=2000, planner="new", seed=2020):
 
     from models.image import ImageAgent
-    
+
     num_data = 0
 
     weathers = list(cu.TRAIN_WEATHERS.keys())
@@ -102,12 +100,12 @@ def rollout(net,
                 stop_count = env.stop_count              
                 
                 if time_step % 100 == 0:
-                    print ('weather {}'.format(weather))
-                    print ('time steps so far {}'.format(time_step))
-                    print ('route completed so far {}'.format(route_comp))
-                    print ('coll actors so far {}'.format(coll_actors))
-                    print ('red count so far {}'.format(red_count))
-                    print ('stop count so far {}'.format(stop_count))  
+                    print('weather {}'.format(weather))
+                    print('time steps so far {}'.format(time_step))
+                    print('route completed so far {}'.format(route_comp))
+                    print('coll actors so far {}'.format(coll_actors))
+                    print('red count so far {}'.format(red_count))
+                    print('stop count so far {}'.format(stop_count))
                 
                 observations = env.get_observations()
                 control = image_agent.run_step(observations) 
@@ -131,21 +129,22 @@ def rollout(net,
             infraction_pen = stop_pen * red_pen * (coll_stat_pen * coll_veh_pen * coll_ped_pen)
             score = route_comp * infraction_pen
             end_t = time.time()
-            print ('========= Episode Stats (Weather {}) ========='.format(weather))
-            print ('Total time: {}'.format(time_step))
-            print ('Route Completion Percentage: {}'.format(route_comp))
-            print ('Collided into: {}'.format(coll_actors))
-            print ('Number of Red Lights run: {}'.format(red_count))
-            print ('Number of Stop Signs run: {}'.format(stop_count))            
-            print ('Driving Score: {}'.format(score))
-            print ('Epsiode Time (real-time, seconds): {}'.format(end_t - st_t))
-            print ('=================================')
+            print('========= Episode Stats (Weather {}) ========='.format(weather))
+            print('Total time: {}'.format(time_step))
+            print('Route Completion Percentage: {}'.format(route_comp))
+            print('Collided into: {}'.format(coll_actors))
+            print('Number of Red Lights run: {}'.format(red_count))
+            print('Number of Stop Signs run: {}'.format(stop_count))
+            print('Driving Score: {}'.format(score))
+            print('Epsiode Time (real-time, seconds): {}'.format(end_t - st_t))
+            print('=================================')
             fit += score
             tot_t += (end_t - st_t)
     
-    print ('Total Fitness: {}'.format(fit))
-    print ('Total Time (s): {}'.format(tot_t))
+    print('Total Fitness: {}'.format(fit))
+    print('Total Time (s): {}'.format(tot_t))
     return fit
+
 
 def launch_carla(port):
     cmd = '/home/boschaustin/projects/CL_AD/ES/carla_lbc/CarlaUE4.sh -fps=10 -no-rendering -carla-world-port={}'.format(port)
@@ -154,21 +153,21 @@ def launch_carla(port):
     time.sleep(5)
     return carla_process
 
-def train(output_file, params_file, cur_ind, model_path, config):
 
+def train(output_file, params_file, gen, indiv_idx, model_path, config):
     from phase2_utils import (
         ReplayBuffer, 
         load_image_model,
         )
-   
+
     # load pre-trained model
     net = load_image_model(
         config['model_args']['backbone'], 
         model_path,
         device=config['device'])
 
-    # load CMAES parameters, cur_id is the population member id i.e. [0, pop_size-1]
-    params = np.load(params_file)['params'][cur_ind]
+    # load CMAES parameters, indiv_idx is the population member id i.e. [0, pop_size-1]
+    params = np.load(params_file)['params'][indiv_idx]
 
     # overwrite weights
     di = net.state_dict()
@@ -183,8 +182,8 @@ def train(output_file, params_file, cur_ind, model_path, config):
         b_shape = di[b_key].shape
         b_num = np.prod(b_shape)
 
-        w = params[st : st + w_num]
-        b = params[st + w_num : st + w_num + b_num]
+        w = params[st: st + w_num]
+        b = params[st + w_num: st + w_num + b_num]
         st += (w_num + b_num)
 
         reshaped_w = np.reshape(w, w_shape)
@@ -193,25 +192,31 @@ def train(output_file, params_file, cur_ind, model_path, config):
         di[b_key] = torch.from_numpy(b)
     net.load_state_dict(di)
     
-    image_agent_kwargs = { 'camera_args' : config["agent_args"]['camera_args'] }
+    image_agent_kwargs = {'camera_args': config["agent_args"]['camera_args']}
 
-    ret = rollout(net, image_agent_kwargs=image_agent_kwargs, port=config['port'], seed = config['seed'])
+    ret = rollout(net, image_agent_kwargs=image_agent_kwargs, port=config['port'],
+                  seed=config['seed'])
 
     all_dists = []
     total_fit = ret
     all_dists.append(total_fit)
     avg_dist = np.mean(all_dists)
 
-    print ('Writing average distance..')
-    with open(output_file, 'w+') as w:
-        w.write(str(float(total_fit)))
-    with open('%s.rew' % output_file, 'w') as w:
+    print('Writing average distance..')
+    with open(output_file, 'a') as file:
+        file.write(str(int(gen)) + ' ' + str(int(indiv_idx)) + ' ' + str(float(total_fit)) + '\n')
+        file.close()
+    with open('%s.rew' % output_file, 'a') as file:
         for dist in all_dists:
-            w.write('%f\n' % dist)
+            file.write('%f %f %f\n' % (gen, indiv_idx, dist))
+            file.close()
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser('Optimize simulator trajectories to match reference trajectory.')
     parser.add_argument('result_file', type=str, help='File to write results to.')
+    parser.add_argument('indiv_idx', type=int, help='Individual id.')
+    parser.add_argument('gen', type=int, help='Generation id.')
     parser.add_argument('--model_path', help='pre-trained model', type=str)
     parser.add_argument('--params_file', help='Simulator parameters.', type=str, default=None)
     parser.add_argument('--gpu_num', default='0')
@@ -236,14 +241,16 @@ if __name__ == '__main__':
     parsed = parser.parse_args()
 
     output_file = parsed.result_file
-    ind = int(output_file.split('_')[-1].split('.')[0])
+    indiv_idx = parsed.indiv_idx
+    gen = parsed.gen
+    # indiv_idx = int(output_file.split('_')[-1].split('.')[0])
     model_path = parsed.model_path
     params_file = parsed.params_file
 
     # specify port to launch server on and connect agent to
     # specify which device to use CPU or GPU etc
     config = {
-            'seed':parsed.seed,
+            'seed': parsed.seed,
             'port': parsed.port,
             'log_dir': parsed.log_dir,
             'log_iterations': parsed.log_iterations,
@@ -289,16 +296,17 @@ if __name__ == '__main__':
     os.environ['CUDA_VISIBLE_DEVICES'] = '{}'.format(parsed.gpu_num)
     
     # launch carla server
-    carla_process = launch_carla(port = config['port'])
-    print ('Launching carla on GPU {} and port {}'.format(parsed.gpu_num, parsed.port))
+    carla_process = launch_carla(port=config['port'])
+    print('Launching carla on GPU {} and port {}'.format(parsed.gpu_num, parsed.port))
     
     st = time.time()
     train(output_file,
-            params_file,
-            ind,
-            model_path,
-            config)
-    print ('Total time for all weathers {}'.format(time.time() - st))
+          params_file,
+          gen,
+          indiv_idx,
+          model_path,
+          config)
+    print('Total time for all weathers {}'.format(time.time() - st))
 
     # kill carla
     os.killpg(os.getpgid(carla_process.pid), signal.SIGTERM)

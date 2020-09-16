@@ -31,7 +31,6 @@ MAP_SIZE = 320
 SAVE_EPISODES = list(range(20))
 
 
-
 def crop_birdview(birdview, dx=0, dy=0):
     x = 260 - CROP_SIZE // 2 + dx
     y = MAP_SIZE // 2 + dy

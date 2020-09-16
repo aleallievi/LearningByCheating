@@ -22,12 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="created results-summary.py, added TODO to cma-es.py">
-      <change afterPath="$PROJECT_DIR$/.idea/LearningByCheating.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="modified config_carla.py to point to new project directory">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LearningByCheating.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearningByCheating.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/train_image_ES.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_ES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/train_image_phase2.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_phase2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -81,6 +89,9 @@
       <module name="LearningByCheating" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/cmaes/cma-es" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -89,7 +100,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -97,14 +108,17 @@
       <method v="2" />
     </configuration>
     <configuration name="results-summary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LearningByCheating" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="sftp://boschaustin@localhost:6000/home/boschaustin/miniconda3/envs/carla_ES/bin/python3.5" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/cmaes" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/cmaes/results-summary.py" />
       <option name="PARAMETERS" value="" />
@@ -115,13 +129,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.cma-es" />
+      <item itemvalue="Python.results-summary" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.cma-es" />
-        <item itemvalue="Python.cma-es" />
-        <item itemvalue="Python.cma-es" />
-        <item itemvalue="Python.cma-es" />
         <item itemvalue="Python.results-summary" />
+        <item itemvalue="Python.cma-es" />
+        <item itemvalue="Python.cma-es" />
+        <item itemvalue="Python.cma-es" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +151,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599159222494</updated>
-      <workItem from="1599159223889" duration="15074000" />
+      <workItem from="1599159223889" duration="15870000" />
+      <workItem from="1599590565867" duration="1489000" />
+      <workItem from="1599592193793" duration="348000" />
+      <workItem from="1599592549504" duration="115000" />
+      <workItem from="1599765254990" duration="6100000" />
+      <workItem from="1599771381687" duration="2292000" />
+      <workItem from="1599773716399" duration="19649000" />
+      <workItem from="1600019717604" duration="27777000" />
+      <workItem from="1600267299365" duration="3276000" />
+      <workItem from="1600270927894" duration="4633000" />
     </task>
     <task id="LOCAL-00001" summary="updated cma-es.py">
       <created>1599162304510</created>
@@ -163,11 +190,28 @@
       <option name="project" value="LOCAL" />
       <updated>1599163026801</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="modified config_carla.py to point to new project directory">
+      <created>1599174839921</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599174839921</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -179,70 +223,103 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated cma-es.py" />
     <MESSAGE value="created results-summary.py" />
     <MESSAGE value="created results-summary.py, added TODO to cma-es.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="created results-summary.py, added TODO to cma-es.py" />
+    <MESSAGE value="modified config_carla.py to point to new project directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified config_carla.py to point to new project directory" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1291" y="361" key="#Deployment" timestamp="1599166330768">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="434" y="179" key="#Deployment" timestamp="1600184977612">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="1291" y="361" key="#Deployment/0.0.2560.1400@0.0.2560.1400" timestamp="1599166330768" />
+    <state x="434" y="179" key="#Deployment/0.0.1600.860@0.0.1600.860" timestamp="1600184977612" />
+    <state x="695" y="317" key="#Deployment/0.0.2560.1400@0.0.2560.1400" timestamp="1599777565006" />
     <state x="1325" y="381" key="#Inspections" timestamp="1599168193808">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1325" y="381" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1599168193808" />
-    <state x="957" y="381" key="#Options" timestamp="1599165281676">
+    <state x="1018" y="524" key="#Notifications" timestamp="1599765294381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="957" y="381" key="#Options/0.0.2560.1400@0.0.2560.1400" timestamp="1599165281676" />
-    <state x="440" y="344" key="#SSH_Configurations" timestamp="1599163818684">
+    <state x="1018" y="524" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1599765294381" />
+    <state x="957" y="381" key="#Options" timestamp="1599774307986">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="440" y="344" key="#SSH_Configurations/0.0.2560.1400@0.0.2560.1400" timestamp="1599163818684" />
-    <state x="1153" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599170796785">
+    <state x="957" y="381" key="#Options/0.0.2560.1400@0.0.2560.1400" timestamp="1599774307986" />
+    <state x="340" y="460" key="#SSH_Configurations" timestamp="1599777278745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1153" y="358" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599170796785" />
+    <state x="340" y="460" key="#SSH_Configurations/0.0.2560.1400@0.0.2560.1400" timestamp="1599777278745" />
+    <state x="1153" y="358" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599777535229">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1153" y="358" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599777535229" />
+    <state x="648" y="308" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600201872300">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="648" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1600201872300" />
+    <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1599794793029" />
     <state x="1491" y="393" key="CommitChangelistDialog2" timestamp="1599162473689">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1491" y="393" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599162473689" />
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1599169440053">
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1599796662986">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599169440053" />
-    <state x="1479" y="457" key="FileChooserDialogImpl" timestamp="1599165540226">
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599796662986" />
+    <state x="1479" y="457" key="FileChooserDialogImpl" timestamp="1599795029529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1479" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599165540226" />
-    <state x="1200" y="348" key="SettingsEditor" timestamp="1599166293159">
+    <state x="1479" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599795029529" />
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1599798043692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1200" y="348" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599166293159" />
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2" timestamp="1599163040509">
+    <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
+    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1599798043692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599163040509" />
-    <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599166508117">
+    <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
+    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1599798043692">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599166508117" />
+    <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
+    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1599798043692">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
+    <state x="1053" y="402" key="RollbackChangesDialog" timestamp="1599795426321">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1053" y="402" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599795426321" />
+    <state x="496" y="154" width="912" height="706" key="SettingsEditor" timestamp="1600184819124">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="154" width="912" height="706" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1600184819124" />
+    <state x="793" y="342" width="1404" height="710" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599797088915" />
+    <state x="1291" y="436" key="Vcs.Push.Dialog.v2" timestamp="1599174851290">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599174851290" />
+    <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599775899429">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599775899429" />
     <state x="294" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599171557549">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="294" y="429" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.2560.1400@0.0.2560.1400" timestamp="1599171557549" />
-    <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1599166274295">
+    <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1599777212585">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.2560.1400@0.0.2560.1400" timestamp="1599166274295" />
-    <state x="1530" y="433" key="ftp.server.browser" timestamp="1599165709090">
+    <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.2560.1400@0.0.2560.1400" timestamp="1599777212585" />
+    <state x="1530" y="433" width="335" height="539" key="ftp.server.browser" timestamp="1599777564150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1530" y="433" key="ftp.server.browser/0.0.2560.1400@0.0.2560.1400" timestamp="1599165709090" />
+    <state x="1530" y="433" width="335" height="539" key="ftp.server.browser/0.0.2560.1400@0.0.2560.1400" timestamp="1599777564150" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,5 +331,8 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LearningByCheating$cma_es.coverage" NAME="cma-es Coverage Results" MODIFIED="1599791399870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes/cma-es" />
   </component>
 </project>

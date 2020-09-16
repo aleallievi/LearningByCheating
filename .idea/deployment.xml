@@ -5,7 +5,7 @@
       <paths name="boschaustin@localhost:6000 password">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/boschaustin/projects/CL_AD/ES/carla_lbc_new" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/boschaustin/projects/CL_AD/ES/carla_lbc_new" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

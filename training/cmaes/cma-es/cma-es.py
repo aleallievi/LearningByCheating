@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """Run CMA-ES on generic task."""
 
+# imports
 from __future__ import print_function
 from __future__ import division
 
@@ -18,7 +19,11 @@ import cma
 import random
 import pdb
 import pickle
+import torch
+# import nvidia_smi  # only used to get GPU usage stats
 
+# parse arguments from launch script, by default only paths: experiment_path, config_file
+# and flags: --run_local, --pop_size are used
 parser = argparse.ArgumentParser(
     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
@@ -26,15 +31,14 @@ parser.add_argument('experiment_path', type=str,
                     help='Directory for results.')
 parser.add_argument('--executable', default=None, type=str, help='Path to executable.')
 #parser.add_argument('num_iters', help='Number of iterations.',type=int)
-parser.add_argument('--pop_size', help='Population size.',type=int, default=-1)
+parser.add_argument('--pop_size', help='Population size.', type=int, default=-1)    # CMA-ES default pop-size is 25
 parser.add_argument('config_file', type=str, help='Configuration variables.')
 #parser.add_argument('--seed_file', help='Seed file for CMA-ES.', default=None)
-#parser.add_argument('--start_iter', help='Iteration to start from.', type=int,default=1)
+#parser.add_argument('--start_iter', help='Iteration to start from.', type=int, default=1)
 parser.add_argument('--run_local', help='Launch on condor or not',
                     action='store_true', default=False)
 
-# flags, unknown_flags = parser.parse_known_args()
-
+# initialize parameters
 executable = None
 exec_args = []
 pre_value_args = []
@@ -42,10 +46,13 @@ exec_kwargs = {}
 sleep_time = 10.0
 wait_limit = 300.0
 log_enabled = False
+GPU_list = []
+jobs_per_GPU = 0
+env_seed = 0
 
 
 def parse_unknown_args(args):
-    """Parse arguments not consumed by arg parser into a dicitonary."""
+    """Parse arguments not consumed by arg parser into a dictionary."""
     retval = {}
     preceded_by_key = False
     for arg in args:
@@ -69,81 +76,89 @@ def load(fi):
     try:
         # loading module via 'importlib', 'imp' deprecated with python3.5
         from importlib.machinery import SourceFileLoader
-        m = SourceFileLoader('', fi).load_module()
+        m = SourceFileLoader('', str(fi)).load_module()
     except Exception:
         print('Could not load config file. Continuing.')
         return
-    global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled
+    global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled, GPU_list, jobs_per_GPU, env_seed
     global pre_value_args
     if hasattr(m, 'executable'): executable = m.executable  # noqa
     if hasattr(m, 'exec_args'): exec_args = m.exec_args  # noqa
     if hasattr(m, 'pre_value_args'): pre_value_args = m.pre_value_args  # noqa
-    if hasattr(m, 'exec_kwargs'): exec_kwargs.update(m.exec_kwargs)  #= m.exec_kwargs  # noqa
+    if hasattr(m, 'exec_kwargs'): exec_kwargs.update(m.exec_kwargs)  # noqa
     if hasattr(m, 'sleep_time'): sleep_time = m.sleep_time  # noqa
     if hasattr(m, 'wait_limit'): wait_limit = m.wait_limit  # noqa
     if hasattr(m, 'log_enabled'): log_enabled = m.log_enabled  # noqa
+    if hasattr(m, 'GPU_list'): GPU_list = m.GPU_list  # noqa
+    if hasattr(m, 'jobs_per_GPU'): jobs_per_GPU = m.jobs_per_GPU  # noqa
+    if hasattr(m, 'env_seed'): env_seed = m.env_seed  # noqa
+
 
 # TODO are all jobs launched at once, meaning that finished jobs aren't immediately replaced?
-def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
+def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0):  # seeds, retries=0):
     """Run individuals locally."""
     params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
     np.savez(params_file, params=solutions)
-    
+
     # TODO some of these params should be set up top (or in a config file)
-    env_seed = 0 # using 0 seed, the most common one used by LbC; same seed creates less variation in evaluation; note either CARLA or the LbC model have their own stochasticity, independent of this seed TODO use the same seed for the policy if it's probabilistic
+    ''' It is recommended to perform GPU arbitration via a centralized config file, below is an alternative solution,
+    just remember to import nvidia-smi
+    # # check if GPUs specified in config file are available
+    # nvidia_smi.nvmlInit()
+    # for GPU in GPU_list:
+    #     res = nvidia_smi.nvmlDeviceGetUtilizationRates(nvidia_smi.nvmlDeviceGetHandleByIndex(GPU))
+    #     print('GPU{}'.format(GPU))
+    #     print(res.gpu)
+    '''
     # jobs to run per gpu, number of gpus, number of jobs running per time
-    jobs_per_gpu = 2
-    NUM_GPU = 4
-    num_jobs = NUM_GPU * jobs_per_gpu
+    NUM_GPU = len(GPU_list)
+    num_jobs = NUM_GPU * jobs_per_GPU
     num_launched = 0
-    #for ind, seed in zip(inds, seeds):
     st_t = time.time()
-    for i in range(0, len(inds), num_jobs):
+    for i in range(0, len(indiv_idx_array), num_jobs):
         launched_procs = []
         # launching fixed number of jobs per time
         for j in range(num_jobs):
-            ind = inds[i + j]
-            # note this seed is diferent from seed used to generate environment 
-            seed = seeds[i + j] # TODO see if no errors after this is deleted
-            #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
-            
+            indiv_idx = indiv_idx_array[i + j]
+
             # set file path to save results in
-            value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind) # TODO if there's only one line of text per file, why not just append all results to the same file?
+            value_file = '%s/results/run_score.txt' % (experiment_path)
+            # value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, indiv_idx) # TODO if there's only one line of text per file, why not just append all results to the same file?
             
             # create command-line string to run a job
             cmd = executable + ' '
             for val in pre_value_args:
                 cmd += '%s ' % val
             cmd += ' %s ' % value_file
+            cmd += ' %s ' % gen
+            cmd += ' %s ' % indiv_idx
             for val in exec_args:
                 cmd += '%s ' % val
 
             # specifying port, gpu number, seed
             cmd += '--params_file=%s ' % params_file
-            cmd += '--gpu_num {} '.format(j // jobs_per_gpu) # TODO assign to GPU based on availability of GPUs and constraints in config
-            cmd += '--port {} '.format((j + 2) * 1000)
+            cmd += '--gpu_num {} '.format(GPU_list[j // jobs_per_GPU]) # TODO assign to GPU based on availability of GPUs and constraints in config
+            cmd += '--port {} '.format((j + 7) * 1000)
             cmd += '--seed {} '.format(env_seed)
             for key, val in exec_kwargs.items():
                 cmd += '%s %s ' % (key, val)
             
             ## Spawn new process ##
-            print(cmd)
-            # proc = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
             proc = subprocess.Popen(cmd.split())
             #proc.wait()
             launched_procs.append(proc)
 
-        print ('----- WAITING FOR JOBS TO FINISH -----')
+        print('----- WAITING FOR JOBS TO FINISH -----')
         for p in launched_procs:
             try:
                 # wait for an hr
-                p.wait(timeout=3600) # TODO have CARLA terminate runs before this would, so we can have a bad score included
+                p.wait(timeout=3600)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
             except subprocess.TimeoutExpired:
-                print('Killing process after timeout. Gen', gen, ', indiv', ind)  
+                print('Killing process after timeout. Gen', gen, ', indiv', indiv_idx)
                 p.kill()
         end_t = time.time()
-        print ('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
-        #time.sleep(jobs_per_gpu * 1200)
+        print('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
+        # time.sleep(jobs_per_GPU * 1200)
         # kill existing carla servers
         PROCNAME = "Carla"
 
@@ -156,97 +171,6 @@ def run_local_GPU(experiment_path, solutions, gen, inds, seeds, retries=0):
                 pid = proc.pid
                 os.kill(pid, 9)
 
-        #print ('break point')
-        #pdb.set_trace()
-
-# NOT USED
-'''
-def run_local(experiment_path, solutions, gen, inds, seeds, retries=0):
-    """Run individuals locally."""
-    params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
-    np.savez(params_file, params=solutions)
-    for ind, seed in zip(inds, seeds):
-        #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
-        value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind)
-        cmd = executable + ' '
-        for val in pre_value_args:
-            cmd += '%s ' % val
-        cmd += ' %s ' % value_file
-        for val in exec_args:
-            cmd += '%s ' % val
-        cmd += '--params_file=%s ' % params_file
-        cmd += '--gpu_num 3 '
-        for key, val in exec_kwargs.items():
-            cmd += '%s %s ' % (key, val)
-        print(cmd)
-        # proc = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
-        proc = subprocess.Popen(cmd.split())
-        proc.wait()
-'''
-
-'''
-#Requirements = ARCH == "X86_64" && !GPU
-#Requirements=InPublic
-#Requirements = ARCH == "X86_64" && !GPU
-def run_on_condor(experiment_path, solutions, gen, inds, seeds, retries=0):
-    #Launch evaluations for given generation and population members.
-    params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
-    np.savez(params_file, params=solutions)
-    ids = []
-    for ind, seed in zip(inds, seeds):
-        #params_file = '%s/results/params_%d_i_%d.txt' % (experiment_path, gen, ind)
-        value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, ind)
-        condor_contents = """Executable = %s
-Universe = vanilla
-Environment = ONCONDOR=true
-Getenv = true
-+GPUJob = true
-Requirements=(TARGET.GPUSlot) 
-Rank = -SlotId + !InMastodon*10
-
-+Group = "GRAD"
-+Project = "AI_ROBOTICS"
-+ProjectDescription = "CMA-ES Experiments"
-
-Input = /dev/null
-"""  % executable
-        if log_enabled:
-            condor_contents += 'Error = %s/process/error-%d-%d-%d.err\n' % (experiment_path, gen, ind, retries)  # noqa
-            condor_contents += 'Output = %s/process/out-%d-%d-%d.out\n' % (experiment_path, gen, ind, retries)  # noqa
-            condor_contents += 'Log = %s/process/log-%d-%d-%d.log\n' % (experiment_path, gen, ind, retries)  # noqa
-        else:
-            condor_contents += 'Error = /dev/null\n'
-            condor_contents += 'Output = /dev/null\n'
-            condor_contents += 'Log = /dev/null\n'
-        condor_contents += 'arguments = '
-
-        for val in pre_value_args:
-            condor_contents += '%s ' % val
-        condor_contents += '%s ' % value_file
-
-        for val in exec_args:
-            condor_contents += '%s ' % val
-        condor_contents += ' --params_file=%s ' % params_file
-        for key, val in exec_kwargs.items():
-            condor_contents += '%s %s ' % (key, val)
-        condor_contents += '\nQueue 1'
-        # print(condor_contents)
-        # raise NotImplementedError
-        # Submit Job
-        proc = subprocess.Popen('condor_submit', stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-        proc.stdin.write(condor_contents.encode())
-        proc.stdin.close()
-        proc.wait()
-        for line in proc.stdout:
-            if not isinstance(line, str):
-                line = line.decode('utf8')
-            if 'cluster' in line:
-                #ids.append(line.split()[-1][:-1])
-                ids.append((line.split()[-1][:-1], ind))
-        time.sleep(0.05)
-    print('Submitted %d jobs' % len(inds))
-    return ids
-'''
 
 # Generate samples / population for next evaluation.
 def cma_es(experiment_path, gen, pop_size=0, in_file=None, seed=None):
@@ -278,7 +202,6 @@ def cma_es(experiment_path, gen, pop_size=0, in_file=None, seed=None):
     os.chdir(current_dir)
 
 
-#def get_running_jobs(result_path, itr, pop_size, current_ids):
 def get_running_jobs(itr, pop_size, current_ids):
     """Get the IDs for running jobs."""
     out = subprocess.check_output('condor_q -nobatch'.split())
@@ -307,6 +230,7 @@ def get_remaining_trials(result_path, itr, pop_size):
             remaining_inds.append(i)
     return remaining_inds
 
+
 def get_completed_trials(result_path, itr, pop_size):
     comp_inds = []
     files = list(glob.iglob(os.path.join(result_path, 'run_%d_i_*.txt' % itr)))
@@ -315,6 +239,7 @@ def get_completed_trials(result_path, itr, pop_size):
         if file in files:
             comp_inds.append(i)
     return comp_inds
+
 
 def kill_remaining(job_ids):
     """Remove jobs submitted to condor."""
@@ -337,6 +262,7 @@ def get_failed_jobs(main_jobs, itr, pop_size):
 
     return remaining_jobs
 
+
 def remove_failed_jobs_from_list(main_jobs, failed_jobs):
     remaining_ids = [j[0] for j in failed_jobs]
     temp_running = []
@@ -346,11 +272,9 @@ def remove_failed_jobs_from_list(main_jobs, failed_jobs):
     return temp_running
 
 
-
-
 def main():  # noqa
 
-    global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled
+    global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled, GPU_list, jobs_per_GPU, env_seed
     global pre_value_args
 
     # Argument usage information
@@ -360,7 +284,6 @@ def main():  # noqa
     # Set up file handling and load pre-trained model
     ##
 
-    global executable # TODO redundant?
     experiment_path = flags.experiment_path
     process_path = os.path.join(experiment_path, 'process')
     result_path = os.path.join(experiment_path, 'results')
@@ -369,7 +292,7 @@ def main():  # noqa
     if flags.executable is not None:
         print('Overriding executable in config file.')
         executable = flags.executable
-    print(unknown_args)
+    print('unknown args:{}'.format(unknown_args))
     unknown_args = parse_unknown_args(unknown_args)
     exec_kwargs.update(unknown_args)
 
@@ -397,144 +320,56 @@ def main():  # noqa
     ##
 
     # create CMAES object and variance to perturb each parameter
-    es = cma.CMAEvolutionStrategy(model_params, 0.0005) # TODO check the appropriateness of this variance value
-    
-    #for itr in range(start_iter, n_iters + 1):  # CMA-ES code requires 1-indexing
+    es = cma.CMAEvolutionStrategy(model_params, 0.0005)     # TODO check the appropriateness of this variance value
+
     itr = 0
-    while not es.stop(): # 1 loop per generation
+    while not es.stop():  # 1 loop per generation
         
         # Generate population
         if flags.pop_size == -1:
-            solutions = es.ask() # TODO change "solutions" variable name to "drawn_params"
+            solutions = es.ask()
         else:
             solutions = es.ask(flags.pop_size)
         pop_size = len(solutions)
-        inds = [i for i in range(pop_size)]
-        seeds = np.random.randint(0.4e10, size=pop_size) # TODO Is this used?
+        indiv_array = [i for i in range(pop_size)]
 
         # Evaluate population
         if flags.run_local:
-            run_local_GPU(experiment_path, solutions, itr, inds, seeds)
+            run_local_GPU(experiment_path, solutions, itr, indiv_array)
         else:
             print('failed to parse flag --run_local')
             break
 
-        # else:
-        #     # NOTE: no quality assurance on the else branch here. Was used for condor
-        #     retry = 1
-        #     main_jobs = run_on_condor(experiment_path, solutions, itr, inds, seeds, retries=0)
-        #     time.sleep(sleep_time)
-        #     failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
-        #     completed_inds = []
-        #     while True:
-        #         if len(failed_jobs) > 0:
-        #             # update main jobs list
-        #             main_jobs = remove_failed_jobs_from_list(main_jobs, failed_jobs)
-        #             # relaunch failed pop members
-        #             remaining_inds = [j[1] for j in failed_jobs]
-        #             if len(completed_inds) > 0:
-        #                 temp_rem_inds = []
-        #                 for j in remaining_inds:
-        #                     if j not in completed_inds:
-        #                         temp_rem_inds.append(j)
-        #                 remaining_inds = temp_rem_inds
-        #             print ('number of failed jobs {}'.format(len(remaining_inds)))
-        #             relaunched_jobs = run_on_condor(experiment_path, solutions, itr, remaining_inds, seeds[remaining_inds], retries=retry)
-        #             retry += 1
-        #             # add newly launched jobs to main running list
-        #             for rj in relaunched_jobs:
-        #                 main_jobs.append(rj)
-        #             assert len(main_jobs)  - len(completed_inds) == pop_size
-        #
-        #         print ('number of completed jobs {}'.format(len(completed_inds)))
-        #         print('Waiting for %d unfinished jobs. Sleeping for %ds' % (len(main_jobs),
-        #                                                                     sleep_time))
-        #         time.sleep(sleep_time)
-        #         failed_jobs = get_failed_jobs(main_jobs, itr, pop_size)
-        #
-        #         completed_inds = get_completed_trials(result_path, itr, pop_size)
-        #         incomplete_inds = get_remaining_trials(result_path, itr, pop_size)
-        #         if len(incomplete_inds) <= 0.1 * pop_size:
-        #             break
-
-            '''
-            remaining_inds = get_remaining_trials(result_path, itr, pop_size)
-            job_ids = run_on_condor(experiment_path, solutions, itr, inds, seeds, retries=0)
-            # Wait for completion
-            wait_ct = 0
-            retry = 1
-            while len(remaining_inds) > 0:
-                if wait_ct > wait_limit or (not job_ids and remaining_inds):
-                    # If no jobs are running but some files aren't written then
-                    # the jobs may have failed. We first pause to make sure it
-                    # isn't just a delay in writing the results.
-                    if not job_ids and remaining_inds:
-                        time.sleep(5.0)
-                        print ('checking result path {}'.format(result_path))
-                        remaining_inds = get_remaining_trials(result_path, itr, pop_size)
-                        break
-                        if not remaining_inds:
-                            break
-                        elif len(remaining_inds) < 0.1 * pop_size:
-                            print('Not all jobs complete but missing < 10%. Continuing.')
-                            break
-                        print('Jobs failed.')
-                    else:
-                        print('Jobs took too long.')
-                    print('Killing and resubmitting.')
-                    if job_ids:
-                        kill_remaining(job_ids)
-                    job_ids = run_on_condor(experiment_path, solutions, itr, remaining_inds,
-                                            seeds[remaining_inds], retries=retry)
-                    wait_ct = 0
-                    retry += 1
-                print('Waiting for %d unfinished jobs. Sleeping for %ds' % (len(job_ids),
-                                                                            sleep_time))
-                time.sleep(sleep_time)
-                wait_ct += sleep_time
-                remaining_inds = get_remaining_trials(result_path, itr, pop_size)
-                job_ids = get_running_jobs(result_path, itr, pop_size, job_ids)
-
-                if len(remaining_inds)==0 and len(job_ids)>0:
-                    time.sleep(10)
-                    job_ids = get_running_jobs(result_path, itr, pop_size, job_ids)
-                '''
-
-            # kill_remaining(job_ids)
-
-        temp_sol=[]
+        temp_solutions = []
         values = []
-        for ind in range(pop_size):
-            src = os.path.join(result_path, 'run_%d_i_%d.txt' % (itr, ind))
-            dest = os.path.join(result_path, 'value_%d_i_%d.txt' % (itr, ind))
+        for indiv_idx in range(pop_size):
+            src = os.path.join(result_path, 'run_%d_i_%d.txt' % (itr, indiv_idx))
+            dest = os.path.join(result_path, 'value_%d_i_%d.txt' % (itr, indiv_idx))
             if os.path.exists(src):
                 # note: taking negative of fitness score since cma library
                 # minimizes objective
                 with open(src) as f:
                     values.append(-float(f.readline()))
-                temp_sol.append(solutions[ind])
+                temp_solutions.append(solutions[indiv_idx])
                 try:
                     shutil.move(src, dest)
                 except Exception as e:
                     raise e
 
-        #es.tell(solutions, values)
-        es.tell(temp_sol, values) # send results to CMA-ES, to be used for sampling the next population
+        es.tell(temp_solutions, values)  # send results to CMA-ES, to be used for sampling the next population
         filename = 'cma-state'
         open(filename, 'wb').write(es.pickle_dumps())
         es.logger.add()
-
 
         with open(os.path.join(result_path, 'valuationdone_%d.txt' % itr), 'w'):
             print('Evaluation done for generation %d' % itr)
 
         itr += 1
-        print ('finished iteration {}'.format(itr))
+        print('finished iteration {}'.format(itr))
 
-    print ('CMA-ES finished')
+    print('CMA-ES finished')
+
 
 if __name__ == '__main__':
     main()
-
-
 
