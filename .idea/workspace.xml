@@ -22,19 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="modified config_carla.py to point to new project directory">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LearningByCheating.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LearningByCheating.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="GPU_list is now specified in config_carla.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/train_image_ES.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_ES.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/train_image_phase2.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_phase2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +152,13 @@
       <workItem from="1599773716399" duration="19649000" />
       <workItem from="1600019717604" duration="27777000" />
       <workItem from="1600267299365" duration="3276000" />
-      <workItem from="1600270927894" duration="4633000" />
+      <workItem from="1600270927894" duration="33834000" />
+      <workItem from="1600347636661" duration="22000" />
+      <workItem from="1600347719245" duration="3536000" />
+      <workItem from="1600353503861" duration="183000" />
+      <workItem from="1600353708993" duration="116000" />
+      <workItem from="1600353907406" duration="203000" />
+      <workItem from="1600354137241" duration="27394000" />
     </task>
     <task id="LOCAL-00001" summary="updated cma-es.py">
       <created>1599162304510</created>
@@ -197,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599174839921</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GPU_list is now specified in config_carla.py">
+      <created>1600277471317</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600277471317</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,7 +235,8 @@
     <MESSAGE value="created results-summary.py" />
     <MESSAGE value="created results-summary.py, added TODO to cma-es.py" />
     <MESSAGE value="modified config_carla.py to point to new project directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified config_carla.py to point to new project directory" />
+    <MESSAGE value="GPU_list is now specified in config_carla.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="GPU_list is now specified in config_carla.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="179" key="#Deployment" timestamp="1600184977612">
@@ -242,14 +248,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1325" y="381" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1599168193808" />
-    <state x="1018" y="524" key="#Notifications" timestamp="1599765294381">
+    <state x="1018" y="524" key="#Notifications" timestamp="1600354171522">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1018" y="524" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1599765294381" />
-    <state x="957" y="381" key="#Options" timestamp="1599774307986">
+    <state x="1018" y="524" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1600354171522" />
+    <state x="957" y="381" key="#Options" timestamp="1600354241247">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="957" y="381" key="#Options/0.0.2560.1400@0.0.2560.1400" timestamp="1599774307986" />
+    <state x="957" y="381" key="#Options/0.0.2560.1400@0.0.2560.1400" timestamp="1600354241247" />
     <state x="340" y="460" key="#SSH_Configurations" timestamp="1599777278745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -258,18 +264,19 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1153" y="358" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599777535229" />
-    <state x="648" y="308" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600201872300">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600363972346">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="648" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1600201872300" />
-    <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1599794793029" />
+    <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1600363972346" />
     <state x="1491" y="393" key="CommitChangelistDialog2" timestamp="1599162473689">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1491" y="393" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599162473689" />
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1599796662986">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="58" y="57" width="1485" height="747" key="DiffContextDialog" timestamp="1600277487001">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="58" y="57" width="1485" height="747" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1600277487001" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599796662986" />
     <state x="1479" y="457" key="FileChooserDialogImpl" timestamp="1599795029529">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -300,9 +307,14 @@
     </state>
     <state x="496" y="154" width="912" height="706" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1600184819124" />
     <state x="793" y="342" width="1404" height="710" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599797088915" />
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2" timestamp="1599174851290">
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1600355995618">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355995618" />
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2" timestamp="1600277484837">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1600277484837" />
     <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599174851290" />
     <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599775899429">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -316,10 +328,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.2560.1400@0.0.2560.1400" timestamp="1599777212585" />
+    <state x="987" y="299" width="585" height="801" key="find.popup" timestamp="1600356086848">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="987" y="299" width="585" height="801" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600356086848" />
     <state x="1530" y="433" width="335" height="539" key="ftp.server.browser" timestamp="1599777564150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1530" y="433" width="335" height="539" key="ftp.server.browser/0.0.2560.1400@0.0.2560.1400" timestamp="1599777564150" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1600355997353">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355997353" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

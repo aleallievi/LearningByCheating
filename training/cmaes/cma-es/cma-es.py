@@ -20,7 +20,9 @@ import random
 import pdb
 import pickle
 import torch
+import pandas as pd
 # import nvidia_smi  # only used to get GPU usage stats
+from datetime import datetime
 
 # parse arguments from launch script, by default only paths: experiment_path, config_file
 # and flags: --run_local, --pop_size are used
@@ -95,9 +97,9 @@ def load(fi):
 
 
 # TODO are all jobs launched at once, meaning that finished jobs aren't immediately replaced?
-def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0):  # seeds, retries=0):
+def run_local_GPU(result_dir_path, solutions, gen, indiv_idx_array, retries=0):
     """Run individuals locally."""
-    params_file = '%s/results/params_%d.npz' % (experiment_path, gen)
+    params_file = '%s/params_%d.npz' % (result_dir_path, gen)
     np.savez(params_file, params=solutions)
 
     # TODO some of these params should be set up top (or in a config file)
@@ -113,6 +115,11 @@ def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0): 
     # jobs to run per gpu, number of gpus, number of jobs running per time
     NUM_GPU = len(GPU_list)
     num_jobs = NUM_GPU * jobs_per_GPU
+
+    active_procs_dict = dict.fromkeys(['GPU{}'.format(GPU_num) for GPU_num in GPU_list], [])
+    for key in active_procs_dict:
+        active_procs_dict['{}'.format(key)] = []
+
     num_launched = 0
     st_t = time.time()
     for i in range(0, len(indiv_idx_array), num_jobs):
@@ -122,14 +129,13 @@ def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0): 
             indiv_idx = indiv_idx_array[i + j]
 
             # set file path to save results in
-            value_file = '%s/results/run_score.txt' % (experiment_path)
-            # value_file = '%s/results/run_%d_i_%d.txt' % (experiment_path, gen, indiv_idx) # TODO if there's only one line of text per file, why not just append all results to the same file?
-            
+            result_file_path = '%s/run_score.txt' % result_dir_path
+
             # create command-line string to run a job
             cmd = executable + ' '
             for val in pre_value_args:
                 cmd += '%s ' % val
-            cmd += ' %s ' % value_file
+            cmd += ' %s ' % result_file_path
             cmd += ' %s ' % gen
             cmd += ' %s ' % indiv_idx
             for val in exec_args:
@@ -138,15 +144,18 @@ def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0): 
             # specifying port, gpu number, seed
             cmd += '--params_file=%s ' % params_file
             cmd += '--gpu_num {} '.format(GPU_list[j // jobs_per_GPU]) # TODO assign to GPU based on availability of GPUs and constraints in config
-            cmd += '--port {} '.format((j + 7) * 1000)
+            cmd += '--port {} '.format(7000 + j*10)
             cmd += '--seed {} '.format(env_seed)
             for key, val in exec_kwargs.items():
                 cmd += '%s %s ' % (key, val)
-            
+
             ## Spawn new process ##
             proc = subprocess.Popen(cmd.split())
             #proc.wait()
             launched_procs.append(proc)
+            # print(proc.pid)
+            active_procs_dict['GPU{}'.format(GPU_list[j // jobs_per_GPU])].append(proc.pid)
+            # print(active_procs_dict)
 
         print('----- WAITING FOR JOBS TO FINISH -----')
         for p in launched_procs:
@@ -166,6 +175,7 @@ def run_local_GPU(experiment_path, solutions, gen, indiv_idx_array, retries=0): 
         # carla server that was launched by that process (already done
         # in training code, but this here also as a safety measure)
         # kill any instance of CARLA before starting again
+        print('Killing existing CARLA servers...')
         for proc in psutil.process_iter():
             if PROCNAME in proc.name():
                 pid = proc.pid
@@ -284,9 +294,9 @@ def main():  # noqa
     # Set up file handling and load pre-trained model
     ##
 
-    experiment_path = flags.experiment_path
-    process_path = os.path.join(experiment_path, 'process')
-    result_path = os.path.join(experiment_path, 'results')
+    experiment_path = os.path.join(flags.experiment_path, datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
+    process_dir_path = os.path.join(experiment_path, 'process')
+    result_dir_path = os.path.join(experiment_path, 'results')
     # Load config variables
     load(flags.config_file)
     if flags.executable is not None:
@@ -299,12 +309,12 @@ def main():  # noqa
     # Init directory
     if not os.path.exists(experiment_path):
         os.mkdir(experiment_path)
-    if not os.path.exists(process_path):
-        os.mkdir(process_path)
-    if os.path.exists(result_path):
-        shutil.rmtree(result_path)
-    if not os.path.exists(result_path):
-        os.mkdir(result_path)
+    if not os.path.exists(process_dir_path):
+        os.mkdir(process_dir_path)
+    if os.path.exists(result_dir_path):
+        shutil.rmtree(result_dir_path)
+    if not os.path.exists(result_dir_path):
+        os.mkdir(result_dir_path)
 
     # loading params of pre-trained model to tune (already saved in file beforehand)
     model_params = []
@@ -324,7 +334,7 @@ def main():  # noqa
 
     itr = 0
     while not es.stop():  # 1 loop per generation
-        
+
         # Generate population
         if flags.pop_size == -1:
             solutions = es.ask()
@@ -335,34 +345,56 @@ def main():  # noqa
 
         # Evaluate population
         if flags.run_local:
-            run_local_GPU(experiment_path, solutions, itr, indiv_array)
+            run_local_GPU(result_dir_path, solutions, itr, indiv_array)
         else:
             print('failed to parse flag --run_local')
             break
 
-        temp_solutions = []
-        values = []
-        for indiv_idx in range(pop_size):
-            src = os.path.join(result_path, 'run_%d_i_%d.txt' % (itr, indiv_idx))
-            dest = os.path.join(result_path, 'value_%d_i_%d.txt' % (itr, indiv_idx))
-            if os.path.exists(src):
-                # note: taking negative of fitness score since cma library
-                # minimizes objective
-                with open(src) as f:
-                    values.append(-float(f.readline()))
-                temp_solutions.append(solutions[indiv_idx])
-                try:
-                    shutil.move(src, dest)
-                except Exception as e:
-                    raise e
+        # temp_solutions = []
+        # values = []
+
+        src = os.path.join(result_dir_path, 'run_score.txt')
+        dest = os.path.join(result_dir_path, 'value_score.txt')
+
+        # Build dataframe from result file with columns: Indiv, Gen, Fit
+        result_df = pd.read_csv(src, sep=' ', header=None, names=['Indiv', 'Gen', 'Fit'])
+        # note: taking negative of fitness score since cma library
+        # minimizes objective
+        result_df['Fit'] = result_df['Fit'].apply(lambda x: x*-1)
+        # Reduce dataframe to results of current generation
+        result_df = result_df[result_df['Gen'] == itr]
+
+        # Create list of values from Fit
+        values = result_df['Fit'].values.tolist()
+        # Re-order solutions according to Indiv evaluations (and grab only solutions that produced a result)
+        temp_solutions = [solutions[idx] for idx in result_df['Indiv'].values.tolist()]
+
+        with open(src):
+            try:
+                shutil.copyfile(src, dest)
+            except Exception as e:
+                raise e
+
+        # for indiv_idx in range(pop_size):
+        #     if os.path.exists(src):
+        #         # note: taking negative of fitness score since cma library
+        #         # minimizes objective
+        #         with open(src) as f:
+        #             values.append(-float(f.readline()))
+        #         temp_solutions.append(solutions[indiv_idx])
+        #         try:
+        #             shutil.move(src, dest)
+        #         except Exception as e:
+        #             raise e
 
         es.tell(temp_solutions, values)  # send results to CMA-ES, to be used for sampling the next population
-        filename = 'cma-state'
+        filename = os.path.join(result_dir_path, 'cma-state')
         open(filename, 'wb').write(es.pickle_dumps())
         es.logger.add()
 
-        with open(os.path.join(result_path, 'valuationdone_%d.txt' % itr), 'w'):
-            print('Evaluation done for generation %d' % itr)
+        with open(os.path.join(result_dir_path, 'valuationdone.txt'), 'a+') as file:
+            file.write('Evaluation done for generation %d \n' % itr)
+            file.close()
 
         itr += 1
         print('finished iteration {}'.format(itr))
