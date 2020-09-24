@@ -67,7 +67,7 @@ class Criterion():
         #self.logger.debug("%s.initialise()" % (self.__class__.__name__))
         return
 
-    def terminate(self, new_status):
+    def terminate(self):
         """
         Terminate the criterion. Can be extended by the user-derived class
         """
@@ -147,7 +147,7 @@ class CollisionTest(Criterion):
 
         return new_status
 
-    def terminate(self, new_status):
+    def terminate(self):
         """
         Cleanup sensor
         """
@@ -155,7 +155,8 @@ class CollisionTest(Criterion):
             self._collision_sensor.destroy()
         self._collision_sensor = None
 
-        super(CollisionTest, self).terminate(new_status)
+        super(CollisionTest, self).terminate()
+        # super(CollisionTest, self).terminate(new_status)
 
     @staticmethod
     def _count_collisions(weak_self, event):     # pylint: disable=too-many-return-statements
@@ -329,7 +330,7 @@ class RouteCompletionTest(Criterion):
         self.actual_value = round(self._percentage_route_completed, 2)
         return new_status
 
-    def terminate(self, new_status):
+    def terminate(self):
         """
         Set test status to failure if not successful and terminate
         """
@@ -337,7 +338,9 @@ class RouteCompletionTest(Criterion):
 
         if self.test_status == "INIT":
             self.test_status = "FAILURE"
-        super(RouteCompletionTest, self).terminate(new_status)
+
+        super(RouteCompletionTest, self).terminate()
+        # super(RouteCompletionTest, self).terminate(new_status)
 
 
 class RunningRedLightTest(Criterion):

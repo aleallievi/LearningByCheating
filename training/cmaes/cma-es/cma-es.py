@@ -20,9 +20,11 @@ import random
 import pdb
 import pickle
 import torch
+import signal
 import pandas as pd
 # import nvidia_smi  # only used to get GPU usage stats
 from datetime import datetime
+
 
 # parse arguments from launch script, by default only paths: experiment_path, config_file
 # and flags: --run_local, --pop_size are used
@@ -51,6 +53,18 @@ log_enabled = False
 GPU_list = []
 jobs_per_GPU = 0
 env_seed = 0
+
+
+def kill_carla():
+    """
+    Kill all CARLA processes
+    """
+    PROCNAME = "Carla"
+    print('Killing existing CARLA servers...')
+    for proc in psutil.process_iter():
+        if PROCNAME in proc.name():
+            pid = proc.pid
+            os.kill(pid, 9)
 
 
 def parse_unknown_args(args):
@@ -84,6 +98,7 @@ def load(fi):
         return
     global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled, GPU_list, jobs_per_GPU, env_seed
     global pre_value_args
+
     if hasattr(m, 'executable'): executable = m.executable  # noqa
     if hasattr(m, 'exec_args'): exec_args = m.exec_args  # noqa
     if hasattr(m, 'pre_value_args'): pre_value_args = m.pre_value_args  # noqa
@@ -97,8 +112,11 @@ def load(fi):
 
 
 # TODO are all jobs launched at once, meaning that finished jobs aren't immediately replaced?
-def run_local_GPU(result_dir_path, solutions, gen, indiv_idx_array, retries=0):
-    """Run individuals locally."""
+def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_idx_array, retries=0):
+    """
+    Run individuals locally.
+    """
+
     params_file = '%s/params_%d.npz' % (result_dir_path, gen)
     np.savez(params_file, params=solutions)
 
@@ -112,21 +130,32 @@ def run_local_GPU(result_dir_path, solutions, gen, indiv_idx_array, retries=0):
     #     print('GPU{}'.format(GPU))
     #     print(res.gpu)
     '''
+
     # jobs to run per gpu, number of gpus, number of jobs running per time
     NUM_GPU = len(GPU_list)
     num_jobs = NUM_GPU * jobs_per_GPU
+    total_jobs = len(indiv_idx_array)
 
     active_procs_dict = dict.fromkeys(['GPU{}'.format(GPU_num) for GPU_num in GPU_list], [])
     for key in active_procs_dict:
         active_procs_dict['{}'.format(key)] = []
 
-    num_launched = 0
+    jobs_start_idx = 0
     st_t = time.time()
-    for i in range(0, len(indiv_idx_array), num_jobs):
+
+    while jobs_start_idx < total_jobs:
+        # for i in range(0, len(indiv_idx_array), num_jobs):  # TODO replace with while loop launching jobs dynamically
+        jobs_failed = False
         launched_procs = []
         # launching fixed number of jobs per time
+        num_jobs = min(num_jobs, total_jobs - jobs_start_idx)
+        print('num_jobs: {}'.format(num_jobs))
+        print('jobs_start_idx: {}'.format(jobs_start_idx))
+        batch_stt = time.time()
+
         for j in range(num_jobs):
-            indiv_idx = indiv_idx_array[i + j]
+            print('Start indiv_idx: {}, Current indiv_idx: {}'.format(jobs_start_idx, jobs_start_idx+j))
+            indiv_idx = indiv_idx_array[jobs_start_idx + j]
 
             # set file path to save results in
             result_file_path = '%s/run_score.txt' % result_dir_path
@@ -136,6 +165,7 @@ def run_local_GPU(result_dir_path, solutions, gen, indiv_idx_array, retries=0):
             for val in pre_value_args:
                 cmd += '%s ' % val
             cmd += ' %s ' % result_file_path
+            cmd += ' %s ' % valuation_file_path
             cmd += ' %s ' % gen
             cmd += ' %s ' % indiv_idx
             for val in exec_args:
@@ -151,37 +181,45 @@ def run_local_GPU(result_dir_path, solutions, gen, indiv_idx_array, retries=0):
 
             ## Spawn new process ##
             proc = subprocess.Popen(cmd.split())
-            #proc.wait()
             launched_procs.append(proc)
-            # print(proc.pid)
             active_procs_dict['GPU{}'.format(GPU_list[j // jobs_per_GPU])].append(proc.pid)
-            # print(active_procs_dict)
 
         print('----- WAITING FOR JOBS TO FINISH -----')
         for p in launched_procs:
             try:
-                # wait for an hr
-                p.wait(timeout=3600)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
+                # wait for 10 hours
+                p.wait(timeout=36000)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
             except subprocess.TimeoutExpired:
-                print('Killing process after timeout. Gen', gen, ', indiv', indiv_idx)
-                p.kill()
-        end_t = time.time()
-        print('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
-        # time.sleep(jobs_per_GPU * 1200)
-        # kill existing carla servers
-        PROCNAME = "Carla"
+                print('Killing process after timeout. Proc', p.pid)
+                print(active_procs_dict)
+                jobs_failed = True
+                with open(valuation_file_path, 'a+') as file:
+                    file.write('Killing process after timeout. Proc_PID: {}, Gen: {}\n'.format(p.pid, gen))
+                    file.close()
+                # p.kill()
+                for liveproc in launched_procs:
+                    liveproc.kill()
+                    # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
+                kill_carla()
 
-        # above only kills the python training process, but still need to kill
-        # carla server that was launched by that process (already done
-        # in training code, but this here also as a safety measure)
-        # kill any instance of CARLA before starting again
-        print('Killing existing CARLA servers...')
-        for proc in psutil.process_iter():
-            if PROCNAME in proc.name():
-                pid = proc.pid
-                os.kill(pid, 9)
+        if not jobs_failed:
+            jobs_start_idx += num_jobs
+        batch_time = time.time() - batch_stt
+        with open(valuation_file_path, 'a+') as file:
+            file.write('Batch_time: {}\n\n'.format(batch_time))
+            file.close()
+
+    end_t = time.time()
+    print('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))
+    # kill existing carla servers
+    # above only kills the python training process, but still need to kill
+    # carla server that was launched by that process (already done
+    # in training code, but this here also as a safety measure)
+    # kill any instance of CARLA before starting again
+    kill_carla()
 
 
+'''
 # Generate samples / population for next evaluation.
 def cma_es(experiment_path, gen, pop_size=0, in_file=None, seed=None):
     print(experiment_path, gen, pop_size, in_file, seed)
@@ -280,7 +318,7 @@ def remove_failed_jobs_from_list(main_jobs, failed_jobs):
         if j[0] not in remaining_ids:
             temp_running.append(j)
     return temp_running
-
+'''
 
 def main():  # noqa
 
@@ -297,6 +335,8 @@ def main():  # noqa
     experiment_path = os.path.join(flags.experiment_path, datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
     process_dir_path = os.path.join(experiment_path, 'process')
     result_dir_path = os.path.join(experiment_path, 'results')
+    valuation_file_path = os.path.join(result_dir_path, 'valuationdone.txt')
+
     # Load config variables
     load(flags.config_file)
     if flags.executable is not None:
@@ -318,7 +358,7 @@ def main():  # noqa
 
     # loading params of pre-trained model to tune (already saved in file beforehand)
     model_params = []
-    with open('/home/boschaustin/projects/CL_AD/ES/carla_lbc/training/model_seed_params.txt', 'r') as f:
+    with open('/home/boschaustin/projects/CL_AD/ES/carla_lbc_new/training/model_seed_params.txt', 'r') as f:
         line = f.readline()
         while line:
             model_params.append(float(line))
@@ -345,7 +385,9 @@ def main():  # noqa
 
         # Evaluate population
         if flags.run_local:
-            run_local_GPU(result_dir_path, solutions, itr, indiv_array)
+            start_time = time.time()
+            run_local_GPU(result_dir_path, valuation_file_path, solutions, itr, indiv_array)
+            gen_eval_time = time.time()-start_time
         else:
             print('failed to parse flag --run_local')
             break
@@ -356,16 +398,19 @@ def main():  # noqa
         src = os.path.join(result_dir_path, 'run_score.txt')
         dest = os.path.join(result_dir_path, 'value_score.txt')
 
-        # Build dataframe from result file with columns: Indiv, Gen, Fit
-        result_df = pd.read_csv(src, sep=' ', header=None, names=['Indiv', 'Gen', 'Fit'])
+        # Build dataframe from result file with columns: Gen, Indiv, Fit
+        result_df = pd.read_csv(src, sep=' ', header=None, names=['Gen', 'Indiv', 'Fit'])
+
         # note: taking negative of fitness score since cma library
         # minimizes objective
         result_df['Fit'] = result_df['Fit'].apply(lambda x: x*-1)
+
         # Reduce dataframe to results of current generation
         result_df = result_df[result_df['Gen'] == itr]
 
         # Create list of values from Fit
         values = result_df['Fit'].values.tolist()
+
         # Re-order solutions according to Indiv evaluations (and grab only solutions that produced a result)
         temp_solutions = [solutions[idx] for idx in result_df['Indiv'].values.tolist()]
 
@@ -375,25 +420,15 @@ def main():  # noqa
             except Exception as e:
                 raise e
 
-        # for indiv_idx in range(pop_size):
-        #     if os.path.exists(src):
-        #         # note: taking negative of fitness score since cma library
-        #         # minimizes objective
-        #         with open(src) as f:
-        #             values.append(-float(f.readline()))
-        #         temp_solutions.append(solutions[indiv_idx])
-        #         try:
-        #             shutil.move(src, dest)
-        #         except Exception as e:
-        #             raise e
-
+        print(len(temp_solutions))
+        print(len(values))
         es.tell(temp_solutions, values)  # send results to CMA-ES, to be used for sampling the next population
         filename = os.path.join(result_dir_path, 'cma-state')
         open(filename, 'wb').write(es.pickle_dumps())
         es.logger.add()
 
-        with open(os.path.join(result_dir_path, 'valuationdone.txt'), 'a+') as file:
-            file.write('Evaluation done for generation %d \n' % itr)
+        with open(valuation_file_path, 'a+') as file:
+            file.write('Jobs_GPU %d Num_GPU %d Gen %d Eval_time %d\n' % (jobs_per_GPU, len(GPU_list), itr, gen_eval_time))
             file.close()
 
         itr += 1

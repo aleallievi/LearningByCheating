@@ -22,11 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="GPU_list is now specified in config_carla.py">
+    <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark/goal_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/goal_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/train_image_ES.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_ES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/train_image_phase2.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_phase2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +58,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunManager" selected="Python.cma-es">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -127,10 +133,7 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cma-es" />
         <item itemvalue="Python.results-summary" />
-        <item itemvalue="Python.cma-es" />
-        <item itemvalue="Python.cma-es" />
         <item itemvalue="Python.cma-es" />
       </list>
     </recent_temporary>
@@ -158,7 +161,16 @@
       <workItem from="1600353503861" duration="183000" />
       <workItem from="1600353708993" duration="116000" />
       <workItem from="1600353907406" duration="203000" />
-      <workItem from="1600354137241" duration="27394000" />
+      <workItem from="1600354137241" duration="27920000" />
+      <workItem from="1600434183311" duration="43140000" />
+      <workItem from="1600521563149" duration="12316000" />
+      <workItem from="1600542306935" duration="19303000" />
+      <workItem from="1600613326248" duration="8967000" />
+      <workItem from="1600625697000" duration="47894000" />
+      <workItem from="1600782926309" duration="26865000" />
+      <workItem from="1600866629862" duration="27738000" />
+      <workItem from="1600903814669" duration="8881000" />
+      <workItem from="1600955520978" duration="20078000" />
     </task>
     <task id="LOCAL-00001" summary="updated cma-es.py">
       <created>1599162304510</created>
@@ -202,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600277471317</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
+      <created>1600390298908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600390298908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +255,8 @@
     <MESSAGE value="created results-summary.py, added TODO to cma-es.py" />
     <MESSAGE value="modified config_carla.py to point to new project directory" />
     <MESSAGE value="GPU_list is now specified in config_carla.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="GPU_list is now specified in config_carla.py" />
+    <MESSAGE value="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*" />
   </component>
   <component name="WindowStateProjectService">
     <state x="434" y="179" key="#Deployment" timestamp="1600184977612">
@@ -256,6 +276,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="957" y="381" key="#Options/0.0.2560.1400@0.0.2560.1400" timestamp="1600354241247" />
+    <state x="872" y="341" key="#Plugins" timestamp="1600882257285">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="341" key="#Plugins/0.0.2560.1400@0.0.2560.1400" timestamp="1600882257285" />
     <state x="340" y="460" key="#SSH_Configurations" timestamp="1599777278745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -273,11 +297,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1491" y="393" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1599162473689" />
-    <state x="58" y="57" width="1485" height="747" key="DiffContextDialog" timestamp="1600277487001">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1600723267523">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="58" y="57" width="1485" height="747" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1600277487001" />
-    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599796662986" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600723267523" />
     <state x="1479" y="457" key="FileChooserDialogImpl" timestamp="1599795029529">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -302,20 +326,20 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1053" y="402" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599795426321" />
-    <state x="496" y="154" width="912" height="706" key="SettingsEditor" timestamp="1600184819124">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="793" y="342" width="912" height="706" key="SettingsEditor" timestamp="1600619174250">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="496" y="154" width="912" height="706" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1600184819124" />
-    <state x="793" y="342" width="1404" height="710" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1599797088915" />
+    <state x="793" y="342" width="1404" height="710" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1600619174250" />
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup" timestamp="1600355995618">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355995618" />
-    <state x="788" y="268" key="Vcs.Push.Dialog.v2" timestamp="1600277484837">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="1291" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600390320573">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1600277484837" />
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1599174851290" />
+    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1600390320573" />
     <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599775899429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -328,18 +352,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1510" y="569" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.0.2560.1400@0.0.2560.1400" timestamp="1599777212585" />
-    <state x="987" y="299" width="585" height="801" key="find.popup" timestamp="1600356086848">
+    <state x="987" y="299" width="664" height="801" key="find.popup" timestamp="1600568277499">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="987" y="299" width="585" height="801" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600356086848" />
+    <state x="987" y="299" width="664" height="801" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600568277499" />
     <state x="1530" y="433" width="335" height="539" key="ftp.server.browser" timestamp="1599777564150">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1530" y="433" width="335" height="539" key="ftp.server.browser/0.0.2560.1400@0.0.2560.1400" timestamp="1599777564150" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1600355997353">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1600880511570">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355997353" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600880511570" />
+    <state x="610" y="298" key="webDeployment.PermissionsDialog" timestamp="1600660277514">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="610" y="298" key="webDeployment.PermissionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1600660277514" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

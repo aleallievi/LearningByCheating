@@ -59,6 +59,7 @@ COLORS = [
 TOWNS = ['Town01', 'Town02', 'Town03', 'Town04']
 VEHICLE_NAME = 'vehicle.ford.mustang'
 
+
 def is_within_distance_ahead(target_location, current_location, orientation, max_distance, degree=60):
     u = np.array([
         target_location.x - current_location.x,
@@ -276,7 +277,6 @@ class TrafficTracker(object):
             self.ran_light = True
             self.total_lights_ran += 1
 
-
     @staticmethod
     def get_closest_light(agent, world):
         location = agent.get_location()
@@ -343,17 +343,16 @@ class CarlaWrapper(object):
     def __init__(
             self, town='Town01', vehicle_name=VEHICLE_NAME, port=2000, client=None,
             col_threshold=400, big_cam=False, seed=None, respawn_peds=True, **kwargs):
-        
-        if client is None:    
+
+        if client is None:
             self._client = carla.Client('localhost', port)
         else:
             self._client = client
-            
+
         self._client.set_timeout(30.0)
 
-        
         set_sync_mode(self._client, False)
-        
+
         self._town_name = town
         self._world = self._client.load_world(town)
         self._map = self._world.get_map()
@@ -390,7 +389,6 @@ class CarlaWrapper(object):
 
         self._respawn_peds = respawn_peds
         self.disable_two_wheels = False
-        
 
     def spawn_vehicles(self):
 
@@ -420,7 +418,7 @@ class CarlaWrapper(object):
 
             self._actor_dict['vehicle'].append(vehicle)
 
-        print ("spawned %d vehicles"%len(self._actor_dict['vehicle']))
+        print("spawned %d vehicles" % len(self._actor_dict['vehicle']))
 
     def spawn_pedestrians(self, n_pedestrians):
         SpawnActor = carla.command.SpawnActor
@@ -455,7 +453,8 @@ class CarlaWrapper(object):
     
             for result in self._client.apply_batch_sync(batch, True):
                 if result.error:
-                    print(result.error)
+                    pass
+                    # print(result.error)
                 else:
                     peds_spawned += 1
                     _walkers.append(result.actor_id)
@@ -465,14 +464,15 @@ class CarlaWrapper(object):
     
             for result in self._client.apply_batch_sync(batch, True):
                 if result.error:
-                    print(result.error)
+                    pass
+                    # print(result.error)
                 else:
                     _controllers.append(result.actor_id)
                     
             controllers.extend(_controllers)
             walkers.extend(_walkers)
 
-        print ("spawned %d pedestrians"%len(controllers))
+        print("spawned %d pedestrians" % len(controllers))
 
         return self._world.get_actors(walkers), self._world.get_actors(controllers)
         
@@ -527,7 +527,6 @@ class CarlaWrapper(object):
         self._player.set_autopilot(False)
         self._player.start_dtcrowd()
         self._actor_dict['player'].append(self._player)
-        
 
     def ready(self, ticks=50):
         self.tick()
@@ -548,7 +547,7 @@ class CarlaWrapper(object):
         self._time_start = time.time()
         self._tick = 0
         
-        print ("Initial collided: %s"%self.collided)
+        print("Initial collided: %s" % self.collided)
         
         return not self.collided
 
@@ -634,7 +633,7 @@ class CarlaWrapper(object):
         if self._big_cam_queue:
             with self._big_cam_queue.mutex:
                 self._big_cam_queue.queue.clear()
-    
+
     @property
     def pedestrians(self):
         return self._actor_dict.get('pedestrian', [])
@@ -642,7 +641,6 @@ class CarlaWrapper(object):
     @property
     def ped_controllers(self):
         return self._actor_dict.get('ped_controller', [])
-
 
     def _setup_sensors(self):
         """
@@ -675,19 +673,17 @@ class CarlaWrapper(object):
 
         rgb_camera.listen(self._rgb_queue.put)
         self._actor_dict['sensor'].append(rgb_camera)
-        
-        
 
         # Collisions.
         self.collided = False
         self._collided_frame_number = -1
 
-        collision_sensor = self._world.spawn_actor(
+        self._collision_sensor = self._world.spawn_actor(
                 self._blueprints.find('sensor.other.collision'),
                 carla.Transform(), attach_to=self._player)
-        collision_sensor.listen(
+        self._collision_sensor.listen(
                 lambda event: self.__class__._on_collision(weakref.ref(self), event))
-        self._actor_dict['sensor'].append(collision_sensor)
+        self._actor_dict['sensor'].append(self._collision_sensor)
 
         # Lane invasion.
         self.invaded = False
@@ -726,7 +722,6 @@ class CarlaWrapper(object):
 
     def __enter__(self):
         set_sync_mode(self._client, True)
-
         return self
 
     def __exit__(self, *args):
@@ -735,8 +730,18 @@ class CarlaWrapper(object):
         otherwise future clients might have trouble connecting.
         """
         self.clean_up()
-
         set_sync_mode(self._client, False)
+        # print(self._world.get_actors()[len(self._world.get_actors()) - 1])
+        # print('Destroying actor above')
+        # input()
+        # carla.command.DestroyActor(self._world.get_actors()[len(self._world.get_actors()) - 1])
+        # print('Destroyed')
+        # print('Now destroying everything')
+        # input()
+        # for actor in self._world.get_actors():
+        #     print(actor)
+        #     carla.command.DestroyActor(actor)
+        # input()
 
     def render_world(self):
         return map_utils.render_world()

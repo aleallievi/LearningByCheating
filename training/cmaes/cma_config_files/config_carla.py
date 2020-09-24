@@ -14,7 +14,7 @@ log_enabled = False
 
 GPU_list = [1, 2, 3]
 
-jobs_per_GPU = 3
+jobs_per_GPU = 1
 
 env_seed = 0
 # using 0 seed, the most common one used by LbC; same seed creates less variation in evaluation; note either CARLA or

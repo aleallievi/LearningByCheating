@@ -10,7 +10,8 @@ from agents.navigation.local_planner import RoadOption, LocalPlannerNew, LocalPl
 
 from .base_suite import BaseSuite
 
-from bird_view.utils.challenge_critera import CollisionTest, RouteCompletionTest, RunningStopTest, RunningRedLightTest
+from bird_view.utils.challenge_critera import RouteCompletionTest, RunningStopTest, RunningRedLightTest, CollisionTest
+
 
 def from_file(poses_txt):
     pairs_file = Path(__file__).parent / poses_txt
@@ -39,14 +40,13 @@ class PointGoalSuite(BaseSuite):
         self.viz_camera = viz_camera
         self._viz_queue = None
 
-        self.collision_actors = [] 
-        self.route_completed = 0 
-        self.red_count = 0 
-        self.stop_count = 0 
+        self.collision_actors = []
+        self.route_completed = 0
+        self.red_count = 0
+        self.stop_count = 0
 
     def init(self, target=1, **kwargs):
         self._target_pose = self._map.get_spawn_points()[target]
-
         super().init(**kwargs)
 
     def ready(self):
@@ -62,9 +62,9 @@ class PointGoalSuite(BaseSuite):
         self._timeout = self._local_planner.calculate_timeout()
 
         self.collision_test = CollisionTest(self._player, terminate_on_failure=False)
-        self.route_comp_test = RouteCompletionTest(self._player, route=self._local_planner.get_route(), carla_map = self._map)
-        self.run_red_test = RunningRedLightTest(self._player, carla_map = self._map)
-        self.run_stop_test = RunningStopTest(self._player, world = self._world, carla_map  = self._map)
+        self.route_comp_test = RouteCompletionTest(self._player, route=self._local_planner.get_route(), carla_map=self._map)
+        self.run_red_test = RunningRedLightTest(self._player, carla_map=self._map)
+        self.run_stop_test = RunningStopTest(self._player, world=self._world, carla_map=self._map)
         return super().ready()
 
     def get_distance_start_to_goal(self):
@@ -121,6 +121,13 @@ class PointGoalSuite(BaseSuite):
         if self._viz_queue:
             with self._viz_queue.mutex:
                 self._viz_queue.queue.clear()
+
+    def terminate_criterion_test(self):
+        # Terminate Criterion tests
+        self.collision_test.terminate()
+        self.route_comp_test.terminate()
+        self.run_red_test.terminate()
+        self.run_stop_test.terminate()
 
     def is_failure(self):
         if self.timestamp_active >= self._timeout or self._tick >= 10000:
@@ -191,7 +198,8 @@ class PointGoalSuite(BaseSuite):
             self._viz_queue = queue.Queue()
             viz_camera.listen(self._viz_queue.put)
 
-            self._actor_dict['sensor'].append(viz_camera)
+        # collision_test_sensor = self.collision_test._collision_sensor
+        # self._actor_dict['sensor'].append(collision_test_sensor)
 
     def render_world(self):
         import matplotlib.pyplot as plt
@@ -236,3 +244,10 @@ class PointGoalSuite(BaseSuite):
         w, h = fig.canvas.get_width_height()
 
         return np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8).reshape(h, w, 3)
+
+    # def __exit__(self, *args):
+    #     """
+    #     Terminate all tests on exit.
+    #     """
+    #     super().__exit__(self, *args)
+    #     self.terminate_criterion_test()
