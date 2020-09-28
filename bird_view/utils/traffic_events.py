@@ -82,4 +82,3 @@ class TrafficEvent(object):
         Set dictionary
         """
         self._dict = dictionary
-

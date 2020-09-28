@@ -49,11 +49,11 @@ class Criterion():
                  optional=False,
                  terminate_on_failure=False):
         #self.logger.debug("%s.__init__()" % (self.__class__.__name__))
-        self._terminate_on_failure = terminate_on_failure
+        # self._terminate_on_failure = terminate_on_failure
 
         self.name = name
         self.actor = actor
-        self.test_status = "INIT"
+        # self.test_status = "INIT"
         self.expected_value_success = expected_value_success
         self.expected_value_acceptable = expected_value_acceptable
         self.actual_value = 0
@@ -67,14 +67,14 @@ class Criterion():
         #self.logger.debug("%s.initialise()" % (self.__class__.__name__))
         return
 
-    def terminate(self):
-        """
-        Terminate the criterion. Can be extended by the user-derived class
-        """
-        if (self.test_status == "RUNNING") or (self.test_status == "INIT"):
-            self.test_status = "SUCCESS"
-
-        #self.logger.debug("%s.terminate()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
+    # def terminate(self):
+    #     """
+    #     Terminate the criterion. Can be extended by the user-derived class
+    #     """
+    #     # if (self.test_status == "RUNNING") or (self.test_status == "INIT"):
+    #     #     self.test_status = "SUCCESS"
+    #
+    #     #self.logger.debug("%s.terminate()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
 
 class CollisionTest(Criterion):
 
@@ -95,17 +95,18 @@ class CollisionTest(Criterion):
     MAX_ID_TIME = 5                 # Amount of time the last collision if is remembered
 
     def __init__(self, actor, other_actor=None, other_actor_type=None,
-                 optional=False, name="CollisionTest", terminate_on_failure=False):
+                 optional=False, name="CollisionTest"): #, terminate_on_failure=False):
         """
         Construction with sensor setup
         """
-        super(CollisionTest, self).__init__(name, actor, 0, None, optional, terminate_on_failure)
+        super(CollisionTest, self).__init__(name, actor, 0, None, optional) #, terminate_on_failure)
         #self.logger.debug("%s.__init__()" % (self.__class__.__name__))
 
         world = self.actor.get_world()
         blueprint = world.get_blueprint_library().find('sensor.other.collision')
-        self._collision_sensor = world.spawn_actor(blueprint, carla.Transform(), attach_to=self.actor)
-        self._collision_sensor.listen(lambda event: self._count_collisions(weakref.ref(self), event))
+        self._collision_sensor_test = world.spawn_actor(blueprint, carla.Transform(), attach_to=self.actor)
+        self._collision_sensor_test.listen(lambda event: self._count_collisions(weakref.ref(self), event))
+        # self._actor_dict['sensor'].append(self._collision_sensor_test)
 
         self.other_actor = other_actor
         self.other_actor_type = other_actor_type
@@ -118,10 +119,10 @@ class CollisionTest(Criterion):
         """
         Check collision count
         """
-        new_status = 'RUNNING'#py_trees.common.Status.RUNNING
-
-        if self._terminate_on_failure and (self.test_status == "FAILURE"):
-            new_status = 'FAILURE'#py_trees.common.Status.FAILURE
+        # new_status = 'RUNNING'#py_trees.common.Status.RUNNING
+        #
+        # if self._terminate_on_failure and (self.test_status == "FAILURE"):
+        #     new_status = 'FAILURE'#py_trees.common.Status.FAILURE
 
         actor_location = self.actor.get_location()#CarlaDataProvider.get_location(self.actor)
         new_registered_collisions = []
@@ -145,18 +146,18 @@ class CollisionTest(Criterion):
 
         #self.logger.debug("%s.update()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
 
-        return new_status
+        # return new_status
 
-    def terminate(self):
-        """
-        Cleanup sensor
-        """
-        if self._collision_sensor is not None:
-            self._collision_sensor.destroy()
-        self._collision_sensor = None
-
-        super(CollisionTest, self).terminate()
-        # super(CollisionTest, self).terminate(new_status)
+    # def terminate(self):
+    #     # """
+    #     # Cleanup sensor
+    #     # """
+    #     # if self._collision_sensor is not None:
+    #     #     self._collision_sensor.destroy()
+    #     # self._collision_sensor = None
+    #
+    #     super(CollisionTest, self).terminate()
+    #     # super(CollisionTest, self).terminate(new_status)
 
     @staticmethod
     def _count_collisions(weak_self, event):     # pylint: disable=too-many-return-statements
@@ -221,7 +222,7 @@ class CollisionTest(Criterion):
                 round(actor_location.y, 3),
                 round(actor_location.z, 3)))
 
-        self.test_status = "FAILURE"
+        # self.test_status = "FAILURE"
         self.actual_value += 1
         self.collision_time = time.time()#GameTime.get_time()
         self.collision_actor_type.append(actor_type)
@@ -249,7 +250,7 @@ class RouteCompletionTest(Criterion):
     def __init__(self, actor, route, carla_map, name="RouteCompletionTest", terminate_on_failure=False):
         """
         """
-        super(RouteCompletionTest, self).__init__(name, actor, 100, terminate_on_failure=terminate_on_failure)
+        super(RouteCompletionTest, self).__init__(name, actor, 100) #, terminate_on_failure=terminate_on_failure)
         #self.logger.debug("%s.__init__()" % (self.__class__.__name__))
         self._actor = actor
         self._route = route
@@ -284,63 +285,63 @@ class RouteCompletionTest(Criterion):
         """
         Check if the actor location is within trigger region
         """
-        new_status = 'RUNNING'#py_trees.common.Status.RUNNING
+        # new_status = 'RUNNING'#py_trees.common.Status.RUNNING
 
         location = self._actor.get_location()#CarlaDataProvider.get_location(self._actor)
-        if location is None:
-            return new_status
+        # if location is None:
+        #     return new_status
+        #
+        # if self._terminate_on_failure and (self.test_status == "FAILURE"):
+        #     new_status = 'FAILURE'#py_trees.common.Status.FAILURE
+        #
+        # elif self.test_status == "RUNNING" or self.test_status == "INIT":
 
-        if self._terminate_on_failure and (self.test_status == "FAILURE"):
-            new_status = 'FAILURE'#py_trees.common.Status.FAILURE
+        for index in range(self._current_index, min(self._current_index + self._wsize + 1, self._route_length)):
+            # Get the dot product to know if it has passed this location
+            ref_waypoint = self._waypoints[index]
+            ref_waypoint_loc = ref_waypoint.transform.location
+            #wp = self._map.get_waypoint(ref_waypoint)
+            wp = ref_waypoint
+            wp_dir = wp.transform.get_forward_vector()          # Waypoint's forward vector
+            wp_veh = location - ref_waypoint_loc                    # vector waypoint - vehicle
+            dot_ve_wp = wp_veh.x * wp_dir.x + wp_veh.y * wp_dir.y + wp_veh.z * wp_dir.z
 
-        elif self.test_status == "RUNNING" or self.test_status == "INIT":
+            if dot_ve_wp > 0:
+                # good! segment completed!
+                self._current_index = index
+                self._percentage_route_completed = 100.0 * float(self._accum_meters[self._current_index]) \
+                    / float(self._accum_meters[-1])
+                self._traffic_event.set_dict({
+                    'route_completed': self._percentage_route_completed})
+                self._traffic_event.set_message(
+                    "Agent has completed > {:.2f}% of the route".format(
+                        self._percentage_route_completed))
 
-            for index in range(self._current_index, min(self._current_index + self._wsize + 1, self._route_length)):
-                # Get the dot product to know if it has passed this location
-                ref_waypoint = self._waypoints[index]
-                ref_waypoint_loc = ref_waypoint.transform.location
-                #wp = self._map.get_waypoint(ref_waypoint)
-                wp = ref_waypoint
-                wp_dir = wp.transform.get_forward_vector()          # Waypoint's forward vector
-                wp_veh = location - ref_waypoint_loc                    # vector waypoint - vehicle
-                dot_ve_wp = wp_veh.x * wp_dir.x + wp_veh.y * wp_dir.y + wp_veh.z * wp_dir.z
+        if self._percentage_route_completed > 99.0 and location.distance(self.target) < self.DISTANCE_THRESHOLD:
+            route_completion_event = TrafficEvent(event_type=TrafficEventType.ROUTE_COMPLETED)
+            route_completion_event.set_message("Destination was successfully reached")
+            self.list_traffic_events.append(route_completion_event)
+            # self.test_status = "SUCCESS"
+            self._percentage_route_completed = 100
 
-                if dot_ve_wp > 0:
-                    # good! segment completed!
-                    self._current_index = index
-                    self._percentage_route_completed = 100.0 * float(self._accum_meters[self._current_index]) \
-                        / float(self._accum_meters[-1])
-                    self._traffic_event.set_dict({
-                        'route_completed': self._percentage_route_completed})
-                    self._traffic_event.set_message(
-                        "Agent has completed > {:.2f}% of the route".format(
-                            self._percentage_route_completed))
-
-            if self._percentage_route_completed > 99.0 and location.distance(self.target) < self.DISTANCE_THRESHOLD:
-                route_completion_event = TrafficEvent(event_type=TrafficEventType.ROUTE_COMPLETED)
-                route_completion_event.set_message("Destination was successfully reached")
-                self.list_traffic_events.append(route_completion_event)
-                self.test_status = "SUCCESS"
-                self._percentage_route_completed = 100
-
-        elif self.test_status == "SUCCESS":
-            new_status = 'SUCCESS'#py_trees.common.Status.SUCCESS
+        # elif self.test_status == "SUCCESS":
+        #     new_status = 'SUCCESS'#py_trees.common.Status.SUCCESS
 
         #self.logger.debug("%s.update()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
         self.actual_value = round(self._percentage_route_completed, 2)
-        return new_status
+        # return new_status
 
-    def terminate(self):
-        """
-        Set test status to failure if not successful and terminate
-        """
-        self.actual_value = round(self._percentage_route_completed, 2)
-
-        if self.test_status == "INIT":
-            self.test_status = "FAILURE"
-
-        super(RouteCompletionTest, self).terminate()
-        # super(RouteCompletionTest, self).terminate(new_status)
+    # def terminate(self):
+    #     """
+    #     Set test status to failure if not successful and terminate
+    #     """
+    #     self.actual_value = round(self._percentage_route_completed, 2)
+    #
+    #     # if self.test_status == "INIT":
+    #     #     self.test_status = "FAILURE"
+    #
+    #     super(RouteCompletionTest, self).terminate()
+    #     # super(RouteCompletionTest, self).terminate(new_status)
 
 
 class RunningRedLightTest(Criterion):
@@ -354,11 +355,11 @@ class RunningRedLightTest(Criterion):
     """
     DISTANCE_LIGHT = 15  # m
 
-    def __init__(self, actor, carla_map, name="RunningRedLightTest", terminate_on_failure=False):
+    def __init__(self, actor, carla_map, name="RunningRedLightTest"): #, terminate_on_failure=False):
         """
         Init
         """
-        super(RunningRedLightTest, self).__init__(name, actor, 0, terminate_on_failure=terminate_on_failure)
+        super(RunningRedLightTest, self).__init__(name, actor, 0) #, terminate_on_failure=terminate_on_failure)
         #self.logger.debug("%s.__init__()" % (self.__class__.__name__))
         self._actor = actor
         self._world = actor.get_world()
@@ -389,12 +390,12 @@ class RunningRedLightTest(Criterion):
         """
         Check if the actor is running a red light
         """
-        new_status = 'RUNNING'#py_trees.common.Status.RUNNING
+        # new_status = 'RUNNING'#py_trees.common.Status.RUNNING
 
         transform = self._actor.get_transform()#CarlaDataProvider.get_transform(self._actor)
         location = transform.location
-        if location is None:
-            return new_status
+        # if location is None:
+            # return new_status
 
         veh_extent = self._actor.bounding_box.extent.x
 
@@ -455,7 +456,7 @@ class RunningRedLightTest(Criterion):
                     # Is the vehicle traversing the stop line?
                     if self.is_vehicle_crossing_line((tail_close_pt, tail_far_pt), (lft_lane_wp, rgt_lane_wp)):
 
-                        self.test_status = "FAILURE"
+                        # self.test_status = "FAILURE"
                         self.actual_value += 1
                         location = traffic_light.get_transform().location
                         red_light_event = TrafficEvent(event_type=TrafficEventType.TRAFFIC_LIGHT_INFRACTION)
@@ -475,12 +476,12 @@ class RunningRedLightTest(Criterion):
                         self._last_red_light_id = traffic_light.id
                         break
 
-        if self._terminate_on_failure and (self.test_status == "FAILURE"):
-            new_status = 'FAILURE'#py_trees.common.Status.FAILURE
+        # if self._terminate_on_failure and (self.test_status == "FAILURE"):
+        #     new_status = 'FAILURE'#py_trees.common.Status.FAILURE
 
         #self.logger.debug("%s.update()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
 
-        return new_status
+        # return new_status
 
     def rotate_point(self, point, angle):
         """
@@ -543,10 +544,10 @@ class RunningStopTest(Criterion):
     SPEED_THRESHOLD = 0.1
     WAYPOINT_STEP = 1.0  # meters
 
-    def __init__(self, actor, world, carla_map, name="RunningStopTest", terminate_on_failure=False):
+    def __init__(self, actor, world, carla_map, name="RunningStopTest"): #, terminate_on_failure=False):
         """
         """
-        super(RunningStopTest, self).__init__(name, actor, 0, terminate_on_failure=terminate_on_failure)
+        super(RunningStopTest, self).__init__(name, actor, 0) #, terminate_on_failure=terminate_on_failure)
         #self.logger.debug("%s.__init__()" % (self.__class__.__name__))
         self._actor = actor
         self._world = world#CarlaDataProvider.get_world()
@@ -645,11 +646,11 @@ class RunningStopTest(Criterion):
         """
         Check if the actor is running a red light
         """
-        new_status = 'RUNNING'#py_trees.common.Status.RUNNING
+        # new_status = 'RUNNING'#py_trees.common.Status.RUNNING
 
         location = self._actor.get_location()
-        if location is None:
-            return new_status
+        # if location is None:
+        #     return new_status
 
         if not self._target_stop_sign:
             # scan for stop signs
@@ -674,7 +675,7 @@ class RunningStopTest(Criterion):
                 if not self._stop_completed and self._affected_by_stop:
                     # did we stop?
                     self.actual_value += 1
-                    self.test_status = "FAILURE"
+                    # self.test_status = "FAILURE"
                     stop_location = self._target_stop_sign.get_transform().location
                     running_stop_event = TrafficEvent(event_type=TrafficEventType.STOP_INFRACTION)
                     running_stop_event.set_message(
@@ -696,10 +697,10 @@ class RunningStopTest(Criterion):
                 self._stop_completed = False
                 self._affected_by_stop = False
 
-        if self._terminate_on_failure and (self.test_status == "FAILURE"):
-            new_status = 'FAILURE'#py_trees.common.Status.FAILURE
+        # if self._terminate_on_failure and (self.test_status == "FAILURE"):
+        #     new_status = 'FAILURE'#py_trees.common.Status.FAILURE
 
         #self.logger.debug("%s.update()[%s->%s]" % (self.__class__.__name__, self.status, new_status))
 
-        return new_status
+        # return new_status
 

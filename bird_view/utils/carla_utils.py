@@ -492,11 +492,10 @@ class CarlaWrapper(object):
             self.n_vehicles = n_vehicles or self.n_vehicles
             self.n_pedestrians = n_pedestrians or self.n_pedestrians
             self._start_pose = self._map.get_spawn_points()[start]
-    
             self.clean_up()
             self.spawn_player()
             self._setup_sensors()
-    
+
             # Hiding away the gore.
             map_utils.init(self._client, self._world, self._map, self._player)
     
@@ -520,7 +519,11 @@ class CarlaWrapper(object):
 
             ready = self.ready()
             if ready:
+                # print(self._world.get_actors().filter('*sensor*'))
+                # print(self._actor_dict['sensor'])
+                # input()
                 break
+
 
     def spawn_player(self):
         self._player = self._world.spawn_actor(self._vehicle_bp, self._start_pose)

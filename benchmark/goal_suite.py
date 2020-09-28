@@ -61,7 +61,8 @@ class PointGoalSuite(BaseSuite):
         self.dist_current_to_goal = self._local_planner.distance_to_goal
         self._timeout = self._local_planner.calculate_timeout()
 
-        self.collision_test = CollisionTest(self._player, terminate_on_failure=False)
+        # Initialize tests that do not build sensors here
+        # self.collision_test = CollisionTest(self._player)
         self.route_comp_test = RouteCompletionTest(self._player, route=self._local_planner.get_route(), carla_map=self._map)
         self.run_red_test = RunningRedLightTest(self._player, carla_map=self._map)
         self.run_stop_test = RunningStopTest(self._player, world=self._world, carla_map=self._map)
@@ -121,13 +122,6 @@ class PointGoalSuite(BaseSuite):
         if self._viz_queue:
             with self._viz_queue.mutex:
                 self._viz_queue.queue.clear()
-
-    def terminate_criterion_test(self):
-        # Terminate Criterion tests
-        self.collision_test.terminate()
-        self.route_comp_test.terminate()
-        self.run_red_test.terminate()
-        self.run_stop_test.terminate()
 
     def is_failure(self):
         if self.timestamp_active >= self._timeout or self._tick >= 10000:
@@ -198,8 +192,13 @@ class PointGoalSuite(BaseSuite):
             self._viz_queue = queue.Queue()
             viz_camera.listen(self._viz_queue.put)
 
-        # collision_test_sensor = self.collision_test._collision_sensor
-        # self._actor_dict['sensor'].append(collision_test_sensor)
+            self._actor_dict['sensor'].append(self.viz_camera)
+
+        # Setup collision test and add collision test sensor to actor dictionary
+        self.collision_test = CollisionTest(self._player)  # , terminate_on_failure=False)
+
+        if self.collision_test._collision_sensor_test:
+            self._actor_dict['sensor'].append(self.collision_test._collision_sensor_test)
 
     def render_world(self):
         import matplotlib.pyplot as plt
@@ -244,10 +243,3 @@ class PointGoalSuite(BaseSuite):
         w, h = fig.canvas.get_width_height()
 
         return np.fromstring(fig.canvas.tostring_rgb(), dtype=np.uint8).reshape(h, w, 3)
-
-    # def __exit__(self, *args):
-    #     """
-    #     Terminate all tests on exit.
-    #     """
-    #     super().__exit__(self, *args)
-    #     self.terminate_criterion_test()

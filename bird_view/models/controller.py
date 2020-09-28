@@ -5,6 +5,7 @@ import numpy as np
 from scipy.special import comb
 from scipy import interpolate
 
+
 def ls_circle(points):
     '''
     Input: Nx2 points
@@ -80,7 +81,6 @@ class CustomController():
         self._controller_args = controller_args
 
         self._e_buffer = deque(maxlen=10)
-        
 
     def run_step(self, alpha, cmd):
         self._e_buffer.append(alpha)

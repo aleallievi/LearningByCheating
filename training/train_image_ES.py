@@ -49,9 +49,7 @@ def str2bool(v):
 def env_rollout(weather, start, target, n_pedestrians, n_vehicles, net,
                 image_agent_kwargs, ImageAgent, suite_name, port, planner, env_seed,
                 valuation_file_path, indiv_idx, episode_length):
-    # Initialize fitness score and execution_time variables
-    fit = 0
-    tot_t = 0
+
     # Instantiate environment "env" through make_suite (in benchmark.__init__.py)
     # Note: make_suite provides a wrapper to launch and access the CARLA client and server;
     # magic functions, performs __init__, __enter__, __exit__ are executed in this order inside the "with" loop
@@ -138,10 +136,10 @@ def env_rollout(weather, start, target, n_pedestrians, n_vehicles, net,
                     indiv_idx, weather, time_step, route_comp, coll_actors, red_count, stop_count, score,
                     end_t - st_t, st_t, end_t, (start, target)))
             file.close()
-        fit += score
-        tot_t += (end_t - st_t)
-        env.terminate_criterion_test()
-    return fit, tot_t
+
+        rollout_time = (end_t - st_t)
+        # env.terminate_criterion_test()
+    return score, rollout_time
 
 
 def rollout(net, valuation_file_path, indiv_idx, image_agent_kwargs=dict(),
@@ -167,11 +165,11 @@ def rollout(net, valuation_file_path, indiv_idx, image_agent_kwargs=dict(),
     for weather in weathers:
         # Start, target evaluation loop
         for start, target in [pose_tasks[i] for i in range(len(pose_tasks))]:
-            target_stt = time.time()
-            fit, tot_t = env_rollout(weather, start, target, n_pedestrians, n_vehicles, net, image_agent_kwargs,
-                                     ImageAgent, suite_name, port, planner, env_seed, valuation_file_path,
-                                     indiv_idx, episode_length)
-
+            score, r_time = env_rollout(weather, start, target, n_pedestrians, n_vehicles, net, image_agent_kwargs,
+                                        ImageAgent, suite_name, port, planner, env_seed, valuation_file_path,
+                                        indiv_idx, episode_length)
+            fit += score
+            tot_t += r_time
     print('Total Fitness: {}'.format(fit))
     print('Total Time (s): {}'.format(tot_t))
     return fit
@@ -345,7 +343,7 @@ if __name__ == '__main__':
 
     print('Total time for all weathers and targets {}'.format(time.time() - st))
     with open(valuation_file_path, 'a+') as file:
-        file.write('Total time for all weathers and targets {}'.format(time.time() - st))
+        file.write('Total time for all weathers and targets {}\n'.format(time.time() - st))
         file.close()
 
     # kill carla

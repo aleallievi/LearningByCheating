@@ -95,7 +95,7 @@ class ImageAgent(Agent):
         super().__init__(**kwargs)
 
         self.fixed_offset = float(camera_args['fixed_offset'])
-        print ("Offset: ", self.fixed_offset)
+        print("Offset: ", self.fixed_offset)
         w = float(camera_args['w'])
         h = float(camera_args['h'])
         self.img_size = np.array([w,h])

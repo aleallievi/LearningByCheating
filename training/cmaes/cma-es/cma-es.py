@@ -147,7 +147,8 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
         # for i in range(0, len(indiv_idx_array), num_jobs):  # TODO replace with while loop launching jobs dynamically
         jobs_failed = False
         launched_procs = []
-        # launching fixed number of jobs per time
+        exit_codes = []
+        # launching fixed number of jobs per iteration
         num_jobs = min(num_jobs, total_jobs - jobs_start_idx)
         print('num_jobs: {}'.format(num_jobs))
         print('jobs_start_idx: {}'.format(jobs_start_idx))
@@ -185,22 +186,57 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
             active_procs_dict['GPU{}'.format(GPU_list[j // jobs_per_GPU])].append(proc.pid)
 
         print('----- WAITING FOR JOBS TO FINISH -----')
-        for p in launched_procs:
-            try:
-                # wait for 10 hours
-                p.wait(timeout=36000)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
-            except subprocess.TimeoutExpired:
-                print('Killing process after timeout. Proc', p.pid)
-                print(active_procs_dict)
-                jobs_failed = True
-                with open(valuation_file_path, 'a+') as file:
-                    file.write('Killing process after timeout. Proc_PID: {}, Gen: {}\n'.format(p.pid, gen))
-                    file.close()
-                # p.kill()
-                for liveproc in launched_procs:
-                    liveproc.kill()
-                    # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
-                kill_carla()
+
+        try:
+            exit_codes = [p.wait(timeout=36000) for p in launched_procs]
+            print(exit_codes)
+
+        except subprocess.TimeoutExpired:
+            print('Killing process after timeout')
+            print(active_procs_dict)
+            jobs_failed = True
+            with open(valuation_file_path, 'a+') as file:
+                file.write('Killing process after timeout. Gen: {}\n'.format(gen))
+                file.close()
+            # p.kill()
+            for liveproc in launched_procs:
+                liveproc.kill()
+                # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
+            kill_carla()
+            for key in active_procs_dict:
+                active_procs_dict['{}'.format(key)] = []
+
+        except any(exit_code != 0 for exit_code in exit_codes):
+            print('Killing process after error')
+            print(active_procs_dict)
+            jobs_failed = True
+            with open(valuation_file_path, 'a+') as file:
+                file.write('Killing process after error. Gen: {} Exit_codes: {}\n'.format(gen, exit_codes))
+                file.close()
+            # p.kill()
+            for liveproc in launched_procs:
+                liveproc.kill()
+                # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
+            kill_carla()
+            for key in active_procs_dict:
+                active_procs_dict['{}'.format(key)] = []
+
+        # for p in launched_procs:
+        #     try:
+        #         # wait for 10 hours
+        #         p.wait(timeout=36000)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
+        #     except subprocess.TimeoutExpired:
+        #         print('Killing process after timeout. Proc', p.pid)
+        #         print(active_procs_dict)
+        #         jobs_failed = True
+        #         with open(valuation_file_path, 'a+') as file:
+        #             file.write('Killing process after timeout. Proc_PID: {}, Gen: {}\n'.format(p.pid, gen))
+        #             file.close()
+        #         # p.kill()
+        #         for liveproc in launched_procs:
+        #             liveproc.kill()
+        #             # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
+        #         kill_carla()
 
         if not jobs_failed:
             jobs_start_idx += num_jobs
@@ -208,6 +244,7 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
         with open(valuation_file_path, 'a+') as file:
             file.write('Batch_time: {}\n\n'.format(batch_time))
             file.close()
+        kill_carla()
 
     end_t = time.time()
     print('----- JOBS TERMINATED in {} -----'.format(end_t - st_t))

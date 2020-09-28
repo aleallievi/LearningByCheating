@@ -23,16 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/benchmark/goal_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/goal_suite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_view/models/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/models/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_view/models/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/models/image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bird_view/utils/traffic_events.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/traffic_events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/cmaes/best-val.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/best-val.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/train_image_ES.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_ES.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/train_image_phase2.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_phase2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
-  <component name="RunManager" selected="Python.cma-es">
+  <component name="RunManager" selected="Python.best-val">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="LearningByCheating" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,6 +76,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="best-val" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LearningByCheating" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/cmaes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/training/cmaes/best-val.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,9 +153,11 @@
     <list>
       <item itemvalue="Python.cma-es" />
       <item itemvalue="Python.results-summary" />
+      <item itemvalue="Python.best-val" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.best-val" />
         <item itemvalue="Python.results-summary" />
         <item itemvalue="Python.cma-es" />
       </list>
@@ -170,7 +195,9 @@
       <workItem from="1600782926309" duration="26865000" />
       <workItem from="1600866629862" duration="27738000" />
       <workItem from="1600903814669" duration="8881000" />
-      <workItem from="1600955520978" duration="20078000" />
+      <workItem from="1600955520978" duration="35307000" />
+      <workItem from="1601040589653" duration="43181000" />
+      <workItem from="1601305622095" duration="4458000" />
     </task>
     <task id="LOCAL-00001" summary="updated cma-es.py">
       <created>1599162304510</created>
@@ -221,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600390298908</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
+      <created>1600979250707</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600979250707</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,22 +340,42 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1479" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599795029529" />
-    <state width="1258" height="401" key="GridCell.Tab.0.bottom" timestamp="1599798043692">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="779" height="276" key="GridCell.Tab.0.bottom" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="779" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
     <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="1258" height="401" key="GridCell.Tab.0.center" timestamp="1599798043692">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="779" height="276" key="GridCell.Tab.0.center" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="779" height="276" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
     <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="1258" height="401" key="GridCell.Tab.0.left" timestamp="1599798043692">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="779" height="276" key="GridCell.Tab.0.left" timestamp="1601308047211">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="779" height="276" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601308047211" />
     <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="1258" height="401" key="GridCell.Tab.0.right" timestamp="1599798043692">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="779" height="276" key="GridCell.Tab.0.right" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state width="779" height="276" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
     <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
+    <state width="779" height="276" key="GridCell.Tab.1.bottom" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="779" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="276" key="GridCell.Tab.1.center" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="779" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="276" key="GridCell.Tab.1.left" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="779" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="276" key="GridCell.Tab.1.right" timestamp="1601308047212">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="779" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
     <state x="1053" y="402" key="RollbackChangesDialog" timestamp="1599795426321">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -335,11 +389,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355995618" />
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600390320573">
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2" timestamp="1600979257286">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1600979257286" />
+    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1600390320573" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1601064308976">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1600277484837" />
-    <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1600390320573" />
+    <state width="1288" height="708" key="XDebugger.FullValuePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1601064308976" />
     <state x="1516" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599775899429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -367,6 +425,10 @@
     <state x="610" y="298" key="webDeployment.PermissionsDialog" timestamp="1600660277514">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="598" y="168" key="webDeployment.PermissionsDialog.Tabs" timestamp="1601307632514">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="598" y="168" key="webDeployment.PermissionsDialog.Tabs/0.0.1600.860@0.0.1600.860" timestamp="1601307632514" />
     <state x="610" y="298" key="webDeployment.PermissionsDialog/0.0.1600.860@0.0.1600.860" timestamp="1600660277514" />
   </component>
   <component name="XDebuggerManager">
@@ -381,6 +443,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LearningByCheating$best_val.coverage" NAME="best-val Coverage Results" MODIFIED="1601307943414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes" />
     <SUITE FILE_PATH="coverage/LearningByCheating$cma_es.coverage" NAME="cma-es Coverage Results" MODIFIED="1599791399870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes/cma-es" />
   </component>
 </project>
