@@ -41,6 +41,8 @@ parser.add_argument('config_file', type=str, help='Configuration variables.')
 #parser.add_argument('--start_iter', help='Iteration to start from.', type=int, default=1)
 parser.add_argument('--run_local', help='Launch on condor or not',
                     action='store_true', default=False)
+parser.add_argument('--load_cma', help='Load latest CMA state or not',
+                    action='store_true', default=False)
 
 # initialize parameters
 executable = None
@@ -53,6 +55,17 @@ log_enabled = False
 GPU_list = []
 jobs_per_GPU = 0
 env_seed = 0
+
+
+def get_latest_subdir(parent_dir_path='.'):
+    """
+    Returns most recently created directory in given path
+    """
+    subdirs = []
+    for subdir in os.listdir(parent_dir_path):
+        subdirs.append(os.path.join(parent_dir_path, subdir))
+    dir = max(subdirs, key=os.path.getmtime)
+    return dir
 
 
 def kill_carla():
@@ -94,7 +107,8 @@ def load(fi):
         from importlib.machinery import SourceFileLoader
         m = SourceFileLoader('', str(fi)).load_module()
     except Exception:
-        print('Could not load config file. Continuing.')
+        print('Could not load config file. Press any key to continue...')
+        input()
         return
     global executable, exec_args, exec_kwargs, sleep_time, wait_limit, log_enabled, GPU_list, jobs_per_GPU, env_seed
     global pre_value_args
@@ -109,7 +123,6 @@ def load(fi):
     if hasattr(m, 'GPU_list'): GPU_list = m.GPU_list  # noqa
     if hasattr(m, 'jobs_per_GPU'): jobs_per_GPU = m.jobs_per_GPU  # noqa
     if hasattr(m, 'env_seed'): env_seed = m.env_seed  # noqa
-
 
 # TODO are all jobs launched at once, meaning that finished jobs aren't immediately replaced?
 def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_idx_array, retries=0):
@@ -143,11 +156,11 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
     jobs_start_idx = 0
     st_t = time.time()
 
-    while jobs_start_idx < total_jobs:
-        # for i in range(0, len(indiv_idx_array), num_jobs):  # TODO replace with while loop launching jobs dynamically
+    while jobs_start_idx < total_jobs: # TODO replace with while loop launching jobs dynamically
         jobs_failed = False
         launched_procs = []
         exit_codes = []
+
         # launching fixed number of jobs per iteration
         num_jobs = min(num_jobs, total_jobs - jobs_start_idx)
         print('num_jobs: {}'.format(num_jobs))
@@ -191,7 +204,7 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
             exit_codes = [p.wait(timeout=36000) for p in launched_procs]
             print(exit_codes)
 
-        except subprocess.TimeoutExpired:
+        except subprocess.TimeoutExpired:   # TODO have CARLA terminate runs before this would, so we can have a bad score included
             print('Killing process after timeout')
             print(active_procs_dict)
             jobs_failed = True
@@ -221,29 +234,14 @@ def run_local_GPU(result_dir_path, valuation_file_path, solutions, gen, indiv_id
             for key in active_procs_dict:
                 active_procs_dict['{}'.format(key)] = []
 
-        # for p in launched_procs:
-        #     try:
-        #         # wait for 10 hours
-        #         p.wait(timeout=36000)  # TODO have CARLA terminate runs before this would, so we can have a bad score included
-        #     except subprocess.TimeoutExpired:
-        #         print('Killing process after timeout. Proc', p.pid)
-        #         print(active_procs_dict)
-        #         jobs_failed = True
-        #         with open(valuation_file_path, 'a+') as file:
-        #             file.write('Killing process after timeout. Proc_PID: {}, Gen: {}\n'.format(p.pid, gen))
-        #             file.close()
-        #         # p.kill()
-        #         for liveproc in launched_procs:
-        #             liveproc.kill()
-        #             # os.killpg(os.getpgid(liveproc.pid), signal.SIGTERM)
-        #         kill_carla()
-
         if not jobs_failed:
             jobs_start_idx += num_jobs
+
         batch_time = time.time() - batch_stt
         with open(valuation_file_path, 'a+') as file:
             file.write('Batch_time: {}\n\n'.format(batch_time))
             file.close()
+
         kill_carla()
 
     end_t = time.time()
@@ -368,7 +366,7 @@ def main():  # noqa
     ##
     # Set up file handling and load pre-trained model
     ##
-
+    last_experiment_path = get_latest_subdir(flags.experiment_path)
     experiment_path = os.path.join(flags.experiment_path, datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
     process_dir_path = os.path.join(experiment_path, 'process')
     result_dir_path = os.path.join(experiment_path, 'results')
@@ -406,8 +404,16 @@ def main():  # noqa
     # Start CMA-ES process in a never-ending loop
     ##
 
-    # create CMAES object and variance to perturb each parameter
-    es = cma.CMAEvolutionStrategy(model_params, 0.0005)     # TODO check the appropriateness of this variance value
+    if flags.load_cma:
+        cma_state_file_path = os.path.join(last_experiment_path, 'results/cma-state')
+        es = pickle.load(open(cma_state_file_path, 'rb'))
+        print('Resuming from cma-state file in:{}\n'.format(cma_state_file_path))
+        with open(valuation_file_path, 'a+') as file:
+            file.write('Resuming from cma-state file in:{}\n'.format(cma_state_file_path))
+            file.close()
+    else:
+        # create CMAES object and variance to perturb each parameter
+        es = cma.CMAEvolutionStrategy(model_params, 0.0005)     # TODO check the appropriateness of this variance value
 
     itr = 0
     while not es.stop():  # 1 loop per generation
@@ -428,9 +434,6 @@ def main():  # noqa
         else:
             print('failed to parse flag --run_local')
             break
-
-        # temp_solutions = []
-        # values = []
 
         src = os.path.join(result_dir_path, 'run_score.txt')
         dest = os.path.join(result_dir_path, 'value_score.txt')
@@ -457,8 +460,7 @@ def main():  # noqa
             except Exception as e:
                 raise e
 
-        print(len(temp_solutions))
-        print(len(values))
+        print('Generation evaluation complete. Number of individuals evaluated:', len(temp_solutions))
         es.tell(temp_solutions, values)  # send results to CMA-ES, to be used for sampling the next population
         filename = os.path.join(result_dir_path, 'cma-state')
         open(filename, 'wb').write(es.pickle_dumps())

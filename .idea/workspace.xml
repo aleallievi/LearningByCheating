@@ -24,16 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d4389224-937c-4b03-8baa-9607e5818a27" name="Default Changelist" comment="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark/goal_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark/goal_suite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird_view/models/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/models/controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird_view/models/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/models/image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/carla_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/challenge_critera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bird_view/utils/traffic_events.py" beforeDir="false" afterPath="$PROJECT_DIR$/bird_view/utils/traffic_events.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/best-val.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/best-val.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/cmaes/cma_config_files/config_carla.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/train_image_ES.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/train_image_ES.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +50,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/training/cmaes/cma-es/cma-es.py" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunManager" selected="Python.best-val">
@@ -88,9 +80,6 @@
       <module name="LearningByCheating" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/training/cmaes" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -158,8 +147,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.best-val" />
-        <item itemvalue="Python.results-summary" />
         <item itemvalue="Python.cma-es" />
+        <item itemvalue="Python.results-summary" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +186,7 @@
       <workItem from="1600903814669" duration="8881000" />
       <workItem from="1600955520978" duration="35307000" />
       <workItem from="1601040589653" duration="43181000" />
-      <workItem from="1601305622095" duration="4458000" />
+      <workItem from="1601305622095" duration="10229000" />
     </task>
     <task id="LOCAL-00001" summary="updated cma-es.py">
       <created>1599162304510</created>
@@ -255,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600979250707</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Solved error message: *ERROR: Invalid session: no stream available with id &lt;id&gt;*">
+      <created>1601310159191</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601310159191</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,15 +314,20 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="340" y="460" key="#SSH_Configurations/0.0.2560.1400@0.0.2560.1400" timestamp="1599777278745" />
-    <state x="1153" y="358" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599777535229">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="721" y="220" width="683" height="548" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601313357949">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="721" y="220" width="683" height="548" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1601313357949" />
     <state x="1153" y="358" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1599777535229" />
     <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600363972346">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="648" y="308" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1600201872300" />
     <state x="1036" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1600363972346" />
+    <state x="845" y="201" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1601313353208">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="845" y="201" key="#com.intellij.ide.macro.MacrosDialog/0.0.1600.860@0.0.1600.860" timestamp="1601313353208" />
     <state x="1491" y="393" key="CommitChangelistDialog2" timestamp="1599162473689">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -336,46 +337,47 @@
     </state>
     <state x="58" y="57" width="1485" height="747" key="DiffContextDialog/0.0.1600.860@0.0.1600.860" timestamp="1600277487001" />
     <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1600723267523" />
-    <state x="1479" y="457" key="FileChooserDialogImpl" timestamp="1599795029529">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="924" y="281" key="FileChooserDialogImpl" timestamp="1601313321275">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
+    <state x="924" y="281" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1601313321275" />
     <state x="1479" y="457" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1599795029529" />
-    <state width="779" height="276" key="GridCell.Tab.0.bottom" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.0.bottom" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="335" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
     <state width="1258" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="779" height="276" key="GridCell.Tab.0.center" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.0.center" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="335" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
     <state width="1258" height="401" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="779" height="276" key="GridCell.Tab.0.left" timestamp="1601308047211">
+    <state width="779" height="335" key="GridCell.Tab.0.left" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601308047211" />
+    <state width="779" height="335" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
     <state width="1258" height="401" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="779" height="276" key="GridCell.Tab.0.right" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.0.right" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="335" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
     <state width="1258" height="401" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1599798043692" />
-    <state width="779" height="276" key="GridCell.Tab.1.bottom" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.1.bottom" timestamp="1601313801038">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
-    <state width="779" height="276" key="GridCell.Tab.1.center" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1601313801038" />
+    <state width="779" height="335" key="GridCell.Tab.1.center" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
-    <state width="779" height="276" key="GridCell.Tab.1.left" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
+    <state width="779" height="335" key="GridCell.Tab.1.left" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
-    <state width="779" height="276" key="GridCell.Tab.1.right" timestamp="1601308047212">
+    <state width="779" height="335" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
+    <state width="779" height="335" key="GridCell.Tab.1.right" timestamp="1601313801037">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="779" height="276" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1601308047212" />
+    <state width="779" height="335" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1601313801037" />
     <state x="1053" y="402" key="RollbackChangesDialog" timestamp="1599795426321">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -389,10 +391,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="254" height="198" key="ShowFilterAction_Filter_Popup/0.0.2560.1400@0.0.2560.1400" timestamp="1600355995618" />
-    <state x="788" y="268" key="Vcs.Push.Dialog.v2" timestamp="1600979257286">
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2" timestamp="1601310169279">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1600979257286" />
+    <state x="788" y="268" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1601310169279" />
     <state x="1291" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1600390320573" />
     <state width="1288" height="708" key="XDebugger.FullValuePopup" timestamp="1601064308976">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -443,7 +445,8 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/LearningByCheating$best_val.coverage" NAME="best-val Coverage Results" MODIFIED="1601307943414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes" />
-    <SUITE FILE_PATH="coverage/LearningByCheating$cma_es.coverage" NAME="cma-es Coverage Results" MODIFIED="1599791399870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes/cma-es" />
+    <SUITE FILE_PATH="coverage/LearningByCheating$results_summary.coverage" NAME="results-summary Coverage Results" MODIFIED="1601310531179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes" />
+    <SUITE FILE_PATH="coverage/LearningByCheating$best_val.coverage" NAME="best-val Coverage Results" MODIFIED="1601310398272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes" />
+    <SUITE FILE_PATH="coverage/LearningByCheating$cma_es.coverage" NAME="cma-es Coverage Results" MODIFIED="1601312986677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/training/cmaes/cma-es" />
   </component>
 </project>

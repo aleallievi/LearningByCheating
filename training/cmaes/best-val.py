@@ -18,6 +18,7 @@ def get_latest_subdir(parent_dir_path='.'):
 path = '/home/boschaustin/projects/CL_AD/ES/carla_lbc_new/cma_results/'
 latest_results_dir = get_latest_subdir(path)
 result_file = os.path.join(latest_results_dir, 'results/value_score.txt')
+print(result_file)
 result_df = pd.read_csv(result_file, sep=' ', header=None, names=['Gen', 'Indiv', 'Fit'])
 
 # Print the mean of the top 5 scores for each generation
